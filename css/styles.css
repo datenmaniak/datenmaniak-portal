@@ -1,0 +1,69 @@
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parallax effect */
+.parallax {
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Aseguramos que el contenido overlay se vea correctamente */
+.parallax>div:first-child {
+    background-attachment: fixed;
+}
+
+/* Para móviles, desactivamos parallax (mejor rendimiento) */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+
+    .parallax>div:first-child {
+        background-attachment: scroll;
+    }
+}
+
+/* Efecto hover en tarjetas */
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* Transición suave para el drawer */
+#drawer {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Cuando el drawer está abierto */
+#drawer.open {
+    transform: translateX(0);
+}
+
+/* Overlay */
+#drawer-overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Links del drawer activos */
+.drawer-link.active {
+    color: #60a5fa;
+    border-left: 3px solid #60a5fa;
+    padding-left: 0.75rem;
+}
+
+/* Fade-in al hacer scroll (opcional, mejora UX) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}

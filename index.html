@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>datenmaniak | DevOps & Infrastructure</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS (drawer, parallax, dark mode) -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts - Roboto (Material Design) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Tailwind config personalizado -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-roboto dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Botón hamburguesa (fijo) -->
+    <button id="menu-btn"
+        class="fixed top-5 left-5 z-50 p-3 bg-gray-800 text-white rounded-lg shadow-lg hover:bg-gray-700 transition-all duration-300 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+    </button>
+
+    <!-- Navigation Drawer (menú lateral) -->
+    <div id="drawer"
+        class="fixed top-0 left-0 h-full w-64 bg-gray-900 text-white z-40 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+        <div class="p-6 pt-20">
+            <nav class="flex flex-col space-y-4">
+                <a href="#hero" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-home mr-3"></i>Inicio</a>
+                <a href="#servicios" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-cogs mr-3"></i>Servicios</a>
+                <a href="#portafolio" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-folder-open mr-3"></i>Portafolio</a>
+                <a href="#habilidades" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-code mr-3"></i>Habilidades</a>
+                <a href="#about" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-user mr-3"></i>Sobre Mí</a>
+                <a href="#testimonios" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-comments mr-3"></i>Testimonios</a>
+                <a href="#contacto" class="drawer-link hover:text-blue-400 transition-colors"><i
+                        class="fas fa-envelope mr-3"></i>Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Overlay oscuro para móvil (cierra drawer al hacer click fuera) -->
+    <div id="drawer-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden transition-opacity duration-300">
+    </div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="min-h-screen flex items-center justify-center relative parallax" data-speed="0.5">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('images/hero-bg.jpg');"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">datenmaniak</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-6">Administrador de sistemas con 11 años de experiencia
+                    en infraestructura IT tradicional. Hoy, en transición hacia DevOps y Cloud Native desde mi Home Lab.
+                    Convencido de que la terminal y un navegador son las mejores herramientas.</p>
+                <a href="#portafolio"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">Ver
+                    Portafolio</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS SECTION -->
+        <section id="servicios" class="min-h-screen flex items-center justify-center relative parallax"
+            data-speed="0.3">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('images/servicios-bg.jpg');"></div>
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-80"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4 py-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Servicios</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div
+                        class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <i class="fab fa-linux text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Linux System Administration</h3>
+                        <p class="text-gray-300">Administración de servidores Linux, automatización, seguridad
+                            perimetral, monitorización y resolución de fallos.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">DevOps & Containerization</h3>
+                        <p class="text-gray-300">Implementación con Docker y Kubernetes (k3s). Creación de pipelines y
+                            flujos de trabajo reproducibles.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-globe text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Web Application Deployment</h3>
+                        <p class="text-gray-300">Despliegue de aplicaciones web (Laravel, PHP, HTML/CSS/JS) en entornos
+                            controlados y seguros.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <i class="fas fa-shield-alt text-4xl text-blue-400 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">IT Infrastructure Consulting</h3>
+                        <p class="text-gray-300">Asesoría en infraestructura IT: hardware, redes, firewalls, VPNs y NAS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO SECTION -->
+        <section id="portafolio" class="min-h-screen flex items-center justify-center relative parallax"
+            data-speed="0.4">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('images/portafolio-bg.jpg');"></div>
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-85"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4 py-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Portafolio</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Proyecto 1 -->
+                    <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-store text-3xl text-blue-400 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Tienda de Catálogo</h3>
+                        <p class="text-sm text-gray-300 mb-2">HTML5, CSS3, JavaScript, PHP</p>
+                        <p class="text-gray-300 text-sm mb-2">Laboratorio de aprendizaje full-stack para comprender
+                            herramientas esenciales de frontend y backend.</p>
+                        <p class="text-xs text-yellow-400">📚 En desarrollo (aprendizaje activo)</p>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-edit text-3xl text-blue-400 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Notas con Markdown</h3>
+                        <p class="text-sm text-gray-300 mb-2">Laravel, PHP, MySQL, Docker</p>
+                        <p class="text-gray-300 text-sm mb-2">App funcional con documentación técnica. Próxima fase:
+                            CI/CD.</p>
+                        <p class="text-xs text-green-400">✅ Funcional · CI/CD pendiente</p>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg">
+                        <i class="fas fa-cloud text-3xl text-blue-400 mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Home Lab Cloud-Native</h3>
+                        <p class="text-sm text-gray-300 mb-2">Proxmox, Kubernetes (k3s), pfSense, Docker</p>
+                        <p class="text-gray-300 text-sm mb-2">Infraestructura simulando entorno Cloud-Native con cluster
+                            K8s y firewall.</p>
+                        <p class="text-xs text-blue-400">☸ Operativo · Documentado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES SECTION -->
+        <section id="habilidades" class="min-h-screen flex items-center justify-center bg-gray-900">
+            <div class="max-w-6xl mx-auto px-4 py-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Habilidades Técnicas</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div><i class="fab fa-linux text-blue-400 w-8"></i> <strong>Linux (11 años):</strong>
+                            Administración en producción</div>
+                        <div><i class="fas fa-shield-alt text-blue-400 w-8"></i> <strong>FreeBSD:</strong> Entorno
+                            corporativo</div>
+                        <div><i class="fas fa-terminal text-blue-400 w-8"></i> <strong>Bash/Shell:</strong>
+                            Automatización y scripts</div>
+                        <div><i class="fas fa-server text-blue-400 w-8"></i> <strong>Proxmox:</strong> Homelab (cluster,
+                            VMs, contenedores)</div>
+                        <div><i class="fab fa-docker text-blue-400 w-8"></i> <strong>Docker:</strong> Homelab,
+                            contenedorización</div>
+                        <div><i class="fas fa-cubes text-blue-400 w-8"></i> <strong>Kubernetes (k3s):</strong> Cluster
+                            en homelab</div>
+                    </div>
+                    <div class="space-y-4">
+                        <div><i class="fas fa-data text-blue-400 w-8"></i> <strong>pfSense:</strong> Firewall en
+                            homelab y producción</div>
+                        <div><i class="fas fa-network-wired text-blue-400 w-8"></i> <strong>VLANs / VPN /
+                                IDS/IPS:</strong> Experiencia corporativa</div>
+                        <div><i class="fab fa-html5 text-blue-400 w-8"></i> <strong>HTML5/CSS3/JS:</strong> Proyecto
+                            tienda (laboratorio)</div>
+                        <div><i class="fab fa-php text-blue-400 w-8"></i> <strong>PHP / Laravel:</strong> App de notas
+                            funcional</div>
+                        <div><i class="fab fa-github text-blue-400 w-8"></i> <strong>Git / GitHub:</strong> Repositorios
+                            públicos</div>
+                        <div><i class="fas fa-chalkboard-user text-blue-400 w-8"></i> <strong>CI/CD:</strong>
+                            Planificado para app de notas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="min-h-screen flex items-center justify-center relative parallax" data-speed="0.2">
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('images/about-bg.jpg');"></div>
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">Sobre datenmaniak</h2>
+                <p class="text-lg text-gray-200 mb-4">Soy un administrador de sistemas de la vieja escuela. Durante 11
+                    años trabajé en el departamento de operaciones de una gran institución, gestionando infraestructura
+                    IT completa: servidores Linux y FreeBSD, firewalls, IDS/IPS, correo corporativo, redes y soporte a
+                    usuarios.</p>
+                <p class="text-lg text-gray-200 mb-4">Hace 11 años dejé el empleo tradicional y trabajo por cuenta
+                    propia. Me mantengo actualizado por cuenta propia: cursos online, laboratorios prácticos en casa,
+                    tutoriales y mucha consola.</p>
+                <p class="text-lg text-gray-200 mb-4">Hoy estoy en plena transición hacia el mundo DevOps y Cloud
+                    Native. He construido un Home Lab con Proxmox, un cluster Kubernetes (k3s) y un firewall pfSense.
+                    También he desarrollado aplicaciones web con Laravel, PHP, HTML5, CSS3 y JavaScript.</p>
+                <p class="text-lg text-gray-200">Mi filosofía: entender la infraestructura desde el hardware hasta la
+                    aplicación. Mi herramienta favorita: la terminal. Mi objetivo: trabajar de forma remota como
+                    Ingeniero DevOps.</p>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS SECTION (placeholder) -->
+        <section id="testimonios" class="min-h-[60vh] flex items-center justify-center bg-gray-800">
+            <div class="max-w-3xl mx-auto px-4 py-20 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Testimonios</h2>
+                <p class="text-xl text-gray-300 italic">✨ Actualmente construyendo relaciones con clientes. Si has
+                    trabajado conmigo y quieres dejar tu opinión, <a href="#contacto"
+                        class="text-blue-400 hover:underline">contáctame</a>.</p>
+            </div>
+        </section>
+
+        <!-- CONTACTO SECTION -->
+        <section id="contacto" class="min-h-screen flex items-center justify-center bg-gray-900">
+            <div class="max-w-4xl mx-auto px-4 py-20 w-full">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Contacto</h2>
+                <!-- Enlaces -->
+                <div class="flex flex-wrap justify-center gap-6 mb-12">
+                    <a href="mailto:datenmaniak@gmail.com"
+                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"><i
+                            class="fas fa-envelope text-blue-400"></i> Gmail</a>
+                    <a href="https://github.com/datenmaniak"
+                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"><i
+                            class="fab fa-github text-blue-400"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/ppwillians"
+                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"><i
+                            class="fab fa-linkedin text-blue-400"></i> LinkedIn</a>
+                    <a href="https://t.me/datenmaniak"
+                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"><i
+                            class="fab fa-telegram text-blue-400"></i> Telegram</a>
+                    <a href="https://wa.me/584242486169"
+                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-lg transition-colors"><i
+                            class="fab fa-whatsapp text-blue-400"></i> WhatsApp</a>
+                </div>
+                <!-- Formulario Formspree -->
+                <form id="contact-form" action="https://formspree.io/f/mjgzzond" method="POST"
+                    class="max-w-2xl mx-auto space-y-4">
+                    <input type="text" name="name" placeholder="Tu nombre" required
+                        class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+                    <input type="email" name="email" placeholder="Tu email" required
+                        class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none">
+                    <textarea name="message" placeholder="Tu mensaje" rows="5" required
+                        class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none"></textarea>
+                    <button type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors duration-300">Enviar
+                        mensaje</button>
+                    <p id="form-status" class="text-center text-sm"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-950 text-center py-6 text-gray-400 text-sm">
+        <p>&copy; 2025 datenmaniak - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
