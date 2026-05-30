@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/798dc59432.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind config personalizado -->
     <script>
@@ -77,10 +78,12 @@
             <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
                 <h1 class="text-5xl md:text-7xl font-bold mb-4">datenmaniak</h1>
                 <p class="text-xl md:text-2xl text-gray-200 mb-6">Administrador de sistemas con 11 años de experiencia
-                    en infraestructura IT tradicional. Hoy, en transición hacia DevOps y Cloud Native desde mi Home Lab.
-                    Convencido de que la terminal y un navegador son las mejores herramientas.</p>
+                    en infraestructura IT tradicional. Hoy en dia, hacia la transición a DevOps y Cloud Native desde mi
+                    Home Lab.
+                    Convencido de que la consola de terminal y un navegador web son las mejores herramientas.</p>
                 <a href="#portafolio"
-                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">Ver
+                    class="inline-block bg-purple-800 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">Ver
+                    <!-- class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">Ver -->
                     Portafolio</a>
             </div>
         </section>
@@ -173,31 +176,36 @@
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="space-y-4">
                         <div><i class="fab fa-linux text-blue-400 w-8"></i> <strong>Linux (11 años):</strong>
-                            Administración en producción</div>
-                        <div><i class="fas fa-shield-alt text-blue-400 w-8"></i> <strong>FreeBSD:</strong> Entorno
-                            corporativo</div>
+                            Entorno corporativo/ Producción/Homelab
+                        </div>
+
+                        <div><i class="fab fa-freebsd text-blue-400 w-8"></i> <strong>FreeBSD:</strong> Entorno
+                            <!-- <div><i class="fas fa-shield-alt text-blue-400 w-8"></i> <strong>FreeBSD:</strong> Entorno -->
+                            corporativo, IDS/IPS, Mail Gateway
+                        </div>
                         <div><i class="fas fa-terminal text-blue-400 w-8"></i> <strong>Bash/Shell:</strong>
-                            Automatización y scripts</div>
+                            Automatización y scripts/Asistencia remota</div>
                         <div><i class="fas fa-server text-blue-400 w-8"></i> <strong>Proxmox:</strong> Homelab (cluster,
                             VMs, contenedores)</div>
                         <div><i class="fab fa-docker text-blue-400 w-8"></i> <strong>Docker:</strong> Homelab,
                             contenedorización</div>
                         <div><i class="fas fa-cubes text-blue-400 w-8"></i> <strong>Kubernetes (k3s):</strong> Cluster
-                            en homelab</div>
+                            en Homelab</div>
                     </div>
                     <div class="space-y-4">
-                        <div><i class="fas fa-data text-blue-400 w-8"></i> <strong>pfSense:</strong> Firewall en
-                            homelab y producción</div>
-                        <div><i class="fas fa-network-wired text-blue-400 w-8"></i> <strong>VLANs / VPN /
-                                IDS/IPS:</strong> Experiencia corporativa</div>
-                        <div><i class="fab fa-html5 text-blue-400 w-8"></i> <strong>HTML5/CSS3/JS:</strong> Proyecto
-                            tienda (laboratorio)</div>
-                        <div><i class="fab fa-php text-blue-400 w-8"></i> <strong>PHP / Laravel:</strong> App de notas
-                            funcional</div>
+                        <div><i class="fas fa-shield-alt text-blue-400 w-8"></i> <strong>pfSense:</strong>
+                            Firewall/Seguridad perimetral (Homelab, Producción)</div>
+                        <div><i class="fas fa-network-wired text-blue-400 w-8"></i> <strong>Redes (CCNA/12
+                                años):</strong>
+                            Experiencia corporativa / VLANs / VPN </div>
+                        <div><i class="fab fa-html5 text-blue-400 w-8"></i> <strong>Web Dev: HTML5/CSS3/JS:</strong>
+                            Proyecto Tienda (Laboratorio)</div>
+                        <div><i class="fab fa-laravel text-blue-400 w-8"></i> <strong>PHP/Laravel:</strong>
+                            Applicacion Web de notas Markdown (Desarrollada en contenedores/Migrada a K3s)</div>
                         <div><i class="fab fa-github text-blue-400 w-8"></i> <strong>Git / GitHub:</strong> Repositorios
                             públicos</div>
                         <div><i class="fas fa-chalkboard-user text-blue-400 w-8"></i> <strong>CI/CD:</strong>
-                            Planificado para app de notas</div>
+                            Homelab/ Planificado para app de notas</div>
                     </div>
                 </div>
             </div>
@@ -211,17 +219,36 @@
             <div class="relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
                 <h2 class="text-4xl md:text-5xl font-bold mb-8">Sobre datenmaniak</h2>
                 <p class="text-lg text-gray-200 mb-4">Soy un administrador de sistemas de la vieja escuela. Durante 11
-                    años trabajé en el departamento de operaciones de una gran institución, gestionando infraestructura
-                    IT completa: servidores Linux y FreeBSD, firewalls, IDS/IPS, correo corporativo, redes y soporte a
+                    años trabajé en el departamento de operaciones de una gran institución, gestionando la
+                    infraestructura
+                    IT por completa como team player con un talentoso equipo, administrando servidores Linux y FreeBSD,
+                    firewalls, IDS/IPS, correo corporativo, redes y soporte a
                     usuarios.</p>
-                <p class="text-lg text-gray-200 mb-4">Hace 11 años dejé el empleo tradicional y trabajo por cuenta
-                    propia. Me mantengo actualizado por cuenta propia: cursos online, laboratorios prácticos en casa,
-                    tutoriales y mucha consola.</p>
-                <p class="text-lg text-gray-200 mb-4">Hoy estoy en plena transición hacia el mundo DevOps y Cloud
-                    Native. He construido un Home Lab con Proxmox, un cluster Kubernetes (k3s) y un firewall pfSense.
-                    También he desarrollado aplicaciones web con Laravel, PHP, HTML5, CSS3 y JavaScript.</p>
-                <p class="text-lg text-gray-200">Mi filosofía: entender la infraestructura desde el hardware hasta la
-                    aplicación. Mi herramienta favorita: la terminal. Mi objetivo: trabajar de forma remota como
+                <p class="text-lg text-gray-200 mb-4">Hace 11 años dejé el empleo tradicional y desde entonces trabajo
+                    de manera independiente.
+                    Soy autodidacta, minucioso y dedicado a mi profesión porque me gusta. Para "mantenerme en forma" con
+                    la tecnología me apoyo en: cursos online, laboratorios prácticos en casa,
+                    tutoriales y muchos comandos en una consola de Linux.</p>
+                <p class="text-lg text-gray-200 mb-4">Hoy en día mantengo el enfoque en mi formación, desarrollo
+                    soluciones
+                    empleando las buenas prácticas y recomendaciones de las tecnologias actuales. He construido un Home
+                    Lab con Proxmox,
+                    un cluster Kubernetes (k3s) y un firewall pfSense con un escenario simulado a la nube.
+                </p>
+
+                <p class="text-lg text-gray-200 mb-4">
+                    Aplico los
+                    conocimientos derivado de mi Homelab
+                    en plena transición hacia el mundo DevOps y Cloud
+                    Native.
+                </p>
+                <p class="text-lg text-gray-200 mb-4"> También he desarrollado aplicaciones web con Laravel, PHP, HTML5,
+                    CSS3 y JavaScript.</p>
+                <p class="text-lg text-gray-200"><strong>Mi filosofía:</strong> entender la infraestructura desde el
+                    hardware hasta el
+                    código y aplicación. <strong>Mi herramienta favorita:</strong> la terminal. <strong> Mi
+                        objetivo:</strong>
+                    Proporcionar soluciones de forma remota como
                     Ingeniero DevOps.</p>
             </div>
         </section>
