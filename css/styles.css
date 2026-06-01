@@ -1,9 +1,74 @@
-/* Smooth scroll behavior */
+/* ========================================
+   DARK / LIGHT MODE VARIABLES
+   ======================================== */
+
+/* Modo Dark (por defecto) */
+:root,
+.dark {
+    --bg-primary: #0A0A0F;
+    --bg-secondary: #1A0B2E;
+    --text-primary: #F5F5F5;
+    --text-secondary: #B0B0B0;
+    --border-primary: rgba(119, 0, 240, 0.3);
+    --shadow-color: rgba(119, 0, 240, 0.3);
+    --card-bg: #1A0B2E;
+    --card-bg-opaque: rgba(26, 11, 46, 0.95);
+}
+
+/* Modo Light */
+.light {
+    --bg-primary: #F8F6FA;
+    --bg-secondary: #F0EDF5;
+    --text-primary: #1A1A2E;
+    --text-secondary: #6B6B7A;
+    --border-primary: rgba(119, 0, 240, 0.2);
+    --shadow-color: rgba(119, 0, 240, 0.1);
+    --card-bg: #FFFFFF;
+    --card-bg-opaque: rgba(255, 255, 255, 0.95);
+
+    /* NUEVAS VARIABLES PARA OVERLAY DE IMÁGENES EN MODO LIGHT */
+    --overlay-color: #E8E0F5;
+    /* Color del overlay (violeta suave) */
+    --overlay-opacity: 0.45;
+    /* Opacidad reducida para ver mejor la imagen */
+}
+
+/* Modo Light */
+/* .light {
+    --bg-primary: #F8F6FA;
+    --bg-secondary: #F0EDF5;
+    --text-primary: #1A1A2E;
+    --text-secondary: #6B6B7A;
+    --border-primary: rgba(119, 0, 240, 0.2);
+    --shadow-color: rgba(119, 0, 240, 0.1);
+    --card-bg: #FFFFFF;
+    --card-bg-opaque: rgba(255, 255, 255, 0.95);
+} */
+
+
+/* ========================================
+   RESET Y BASE
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Parallax effect */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========================================
+   PARALLAX EFFECT
+   ======================================== */
 .parallax {
     position: relative;
     overflow: hidden;
@@ -13,50 +78,169 @@ html {
     background-size: cover;
 }
 
-/* Aseguramos que el contenido overlay se vea correctamente */
-.parallax>div:first-child {
-    background-attachment: fixed;
-}
-
-/* Para móviles, desactivamos parallax (mejor rendimiento) */
+/* Desactivar parallax en móviles */
 @media (max-width: 768px) {
     .parallax {
         background-attachment: scroll;
     }
-
-    .parallax>div:first-child {
-        background-attachment: scroll;
-    }
 }
 
-/* Efecto hover en tarjetas */
-.hover\:scale-105:hover {
-    transform: scale(1.05);
+/* Overlay para secciones parallax */
+.parallax .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--bg-primary);
+    opacity: 0.85;
+    z-index: 1;
 }
 
-/* Transición suave para el drawer */
+.parallax .content {
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================
+   NAVIGATION DRAWER
+   ======================================== */
 #drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    z-index: 40;
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 10px var(--shadow-color);
+    border-right: 1px solid var(--border-primary);
 }
 
-/* Cuando el drawer está abierto */
 #drawer.open {
     transform: translateX(0);
 }
 
-/* Overlay */
 #drawer-overlay {
-    transition: opacity 0.3s ease-in-out;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 35;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Links del drawer activos */
+#drawer-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.drawer-link {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    transition: color 0.2s ease, background-color 0.2s ease;
+    border-radius: 8px;
+}
+
+.drawer-link:hover {
+    color: #7700F0;
+    background-color: rgba(119, 0, 240, 0.1);
+}
+
 .drawer-link.active {
-    color: #60a5fa;
-    border-left: 3px solid #60a5fa;
-    padding-left: 0.75rem;
+    color: #7700F0;
+    border-left: 3px solid #7700F0;
+    background-color: rgba(119, 0, 240, 0.1);
 }
 
-/* Fade-in al hacer scroll (opcional, mejora UX) */
+/* ========================================
+   SECCIONES CON FONDO OSCURO ASEGURADO
+   ======================================== */
+section {
+    position: relative;
+}
+
+/* Asegurar que las secciones sin parallax tengan fondo */
+section:not(.parallax) {
+    background-color: var(--bg-primary);
+}
+
+/* Tarjetas de servicios y portafolio */
+.service-card,
+.portfolio-card {
+    background-color: var(--card-bg-opaque);
+    border: 1px solid var(--border-primary);
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover,
+.portfolio-card:hover {
+    transform: scale(1.02);
+    background-color: var(--card-bg);
+}
+
+/* ========================================
+   TABLAS
+   ======================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    color: #7700F0;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-primary);
+    color: var(--text-secondary);
+}
+
+tr:hover td {
+    background-color: rgba(119, 0, 240, 0.05);
+}
+
+/* ========================================
+   FORMULARIO
+   ======================================== */
+input,
+textarea {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7700F0;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-primary);
+    color: var(--text-secondary);
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -67,3 +251,147 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ========================================
+   UTILIDADES
+   ======================================== */
+.transition-colors {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* ============================================
+   SEPARADOR ENTRE SECCIONES
+   ============================================
+   Propósito: Crear un espacio vacío visible entre secciones
+   para que las imágenes de fondo con parallax no se "peguen"
+   visualmente al hacer scroll.
+   
+   EFECTO: Al final de cada sección, se añade un margen inferior
+   equivalente al 33.3% de la altura del viewport (1/3 de la pantalla).
+   Esto crea una pausa visual proporcional al tamaño de la pantalla.
+   
+   VALOR ACTUAL: 33.3vh (un tercio de la altura de la ventana)
+   
+   CÓMO AJUSTAR:
+   - Cambiar 33.3vh por otro valor (ej: 20vh, 40vh, 50vh)
+   - Para deshabilitar: cambiar a 0 o comentar el bloque
+   ============================================ */
+
+/* Separador visible entre cada sección */
+section {
+    /* Espacio vacío al final de cada sección = 1/3 de la pantalla */
+    margin-bottom: 15vh;
+    */
+}
+
+*/
+
+/* La última sección no necesita margen inferior */
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+/* En móviles, reducimos ligeramente para no alargar excesivamente */
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 25vh;
+        /* 1/4 de pantalla en móvil */
+    }
+}
+
+/* ============================================
+   ASEGURAR FONDO SÓLIDO EN EL SEPARADOR
+   ============================================ */
+
+/* Esto evita que la imagen de fondo de la sección anterior
+   se vea a través del margen de separación */
+/* section { */
+/* background-color: var(--bg-primary); */
+/* } */
+
+/* Las secciones parallax mantienen su imagen,
+   pero el fondo se ve en el margen */
+/* .parallax { */
+/* background-color: var(--bg-primary); */
+/* } */
+
+/* ============================================
+   FIN DE SEPARADOR ENTRE SECCIONES
+   ============================================ */
+
+
+/* ============================================
+   FADE-IN CON DESPLAZAMIENTO PARA SECCIONES
+   ============================================
+   Propósito: Al hacer scroll, el contenido de cada sección
+   aparece con un efecto suave de opacidad y desplazamiento vertical.
+   
+   EFECTO: El contenido "sube" hacia el visitante mientras se vuelve visible.
+   
+   PARÁMETROS ACTUALES:
+   - Duración: 0.5s
+   - Desplazamiento: 20px hacia arriba
+   - Opacidad: 0 → 1
+   - Activación: Cuando la sección entra al viewport
+   
+   CÓMO DESHABILITAR:
+   - Comentar o eliminar este bloque completo
+   - O cambiar la opacidad inicial a 1 y transform a none
+   ============================================ */
+
+/* Estado inicial del contenido (oculto) */
+section .section-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Estado visible (cuando la sección entra al viewport) */
+section.visible .section-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   FIN DE FADE-IN
+   ============================================ */
+
+
+/* ============================================
+   OVERLAY PARA IMÁGENES DE FONDO
+   ============================================
+   Propósito: Controlar la opacidad y color del overlay
+   que va sobre las imágenes de fondo en cada sección parallax.
+   
+   MODO DARK: overlay oscuro (opacidad 0.75)
+   MODO LIGHT: overlay violeta suave (opacidad 0.60)
+   
+   CÓMO AJUSTAR:
+   - Cambiar --overlay-opacity en el bloque .light
+   - Cambiar --overlay-color en el bloque .light
+   ============================================ */
+
+/* Overlay base para todas las secciones parallax */
+.parallax .overlay-visible {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Modo Dark (por defecto) */
+.parallax .overlay-visible {
+    background-color: #0A0A0F;
+    opacity: 0.75;
+}
+
+/* Modo Light - usando variables personalizadas */
+.light .parallax .overlay-visible {
+    background-color: var(--overlay-color, #F0EDF5);
+    opacity: var(--overlay-opacity, 0.60);
+}
+
+/* ============================================
+   FIN DE OVERLAY
+   ============================================ */
