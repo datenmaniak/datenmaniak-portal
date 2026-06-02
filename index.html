@@ -546,8 +546,8 @@
                 </div>
 
                 <!-- Formulario Formspree -->
-                <form id="contact-form" action="https://formspree.io/f/mjgzzond" method="POST"
-                    class="max-w-2xl mx-auto space-y-4">
+                <form action="https://api.web3forms.com/submit" method="POST" class="max-w-2xl mx-auto space-y-4">
+                    <input type="hidden" name="access_key" value="ff9dcfbd-b202-46a5-b443-cb4b07ef1892">
                     <input type="text" name="name" placeholder="Su nombre..." required
                         class="w-full px-4 py-3 rounded-lg bg-bg-secondary border border-border-primary focus:border-daten-primary focus:outline-none text-text-primary">
                     <input type="email" name="email" placeholder="Su email..." required
@@ -560,12 +560,13 @@
                         mensaje</button>
                     <p id="form-status" class="text-center text-sm text-text-secondary"></p>
                 </form>
+
             </div>
         </section>
     </main>
 
     <footer class="bg-bg-secondary text-center py-6 text-text-secondary text-sm border-t border-border-primary">
-        <p>&copy; 2025 - 2026 datenmaniak - Todos los derechos reservados</p>
+        <p>&copy; 2026 datenmaniak - Todos los derechos reservados</p>
     </footer>
 
     <script src="js/script.js"></script>
