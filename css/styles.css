@@ -382,16 +382,44 @@ section.visible .section-content {
 
 /* Modo Dark (por defecto) */
 .parallax .overlay-visible {
-    background-color: #0A0A0F;
-    opacity: 0.75;
+    background-color: #1b1b29;
+    opacity: 0.55;
 }
 
 /* Modo Light - usando variables personalizadas */
 .light .parallax .overlay-visible {
-    background-color: var(--overlay-color, #F0EDF5);
-    opacity: var(--overlay-opacity, 0.60);
+    background-color: var(--overlay-color, #7c738f);
+    opacity: var(--overlay-opacity, 0.90);
 }
 
 /* ============================================
    FIN DE OVERLAY
+   ============================================ */
+
+
+/* ============================================
+   ESTILOS ESPECÍFICOS PARA ABOUT (sin parallax)
+   ============================================ */
+#about {
+    background-color: var(--bg-primary);
+    position: relative;
+    z-index: 1;
+}
+
+#about .border-l-4 {
+    border-left-color: #7700F0;
+}
+
+/* Animación suave para la foto al hacer hover (opcional) */
+#about .rounded-full {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .rounded-full:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px -5px rgba(119, 0, 240, 0.3);
+}
+
+/* ============================================
+   FIN ABOUT
    ============================================ */

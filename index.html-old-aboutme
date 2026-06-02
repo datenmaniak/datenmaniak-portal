@@ -448,85 +448,52 @@
         </section>
 
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="min-h-screen flex items-center justify-center bg-bg-primary">
-            <div class="max-w-6xl mx-auto px-4 py-20 w-full">
+        <!-- <section id="about" class="min-h-screen flex items-center justify-center relative parallax" data-speed="0.2"> -->
+        <section id="about" class="min-h-screen flex items-center justify-center relative parallax" data-speed="0.2"
+            style="background-image: url('images/about-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <!-- <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('images/about-bg.jpg');  background-size: cover; background-position: center; background-attachment: fixed;">
+            </div> -->
+            <!-- <div class="absolute inset-0 bg-bg-primary opacity-55 z-0"></div> -->
+            <div class="overlay-visible z-0"></div>
 
-                <!-- Grid: Foto (superior derecha) + Título (superior izquierda) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="section-content  relative z-10 max-w-4xl mx-auto px-4 py-20 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-daten-primary">Sobre datenmaniak</h2>
+                <p class="text-lg text-text-primary mb-4">Soy un administrador de sistemas de la vieja escuela. Durante
+                    11
+                    años trabajé en el departamento de operaciones de una gran institución, gestionando la
+                    infraestructura
+                    IT por completa como team player con un talentoso equipo, administrando servidores Linux y FreeBSD,
+                    firewalls, IDS/IPS, correo corporativo, redes y soporte a
+                    usuarios.</p>
+                <p class="text-lg text-text-primary mb-4">Hace 11 años dejé el empleo tradicional y desde entonces
+                    trabajo
+                    de manera independiente.
+                    Soy autodidacta, minucioso y dedicado a mi profesión porque me gusta. Para "mantenerme en forma" con
+                    la tecnología me apoyo en: cursos online, laboratorios prácticos en casa,
+                    tutoriales y muchos comandos en una consola de Linux.</p>
+                <p class="text-lg text-text-primary mb-4">Hoy en día mantengo el enfoque en mi formación, desarrollo
+                    soluciones
+                    empleando las buenas prácticas y recomendaciones de las tecnologias actuales. He construido un Home
+                    Lab con Proxmox,
+                    un cluster Kubernetes (k3s) y un firewall pfSense con un escenario simulado a la nube.
+                </p>
 
-                    <!-- Lado izquierdo: Título y subtítulo -->
-                    <div class="order-2 md:order-1 text-center md:text-left">
-                        <h2 class="text-4xl md:text-5xl font-bold text-daten-primary mb-4">Sobre datenmaniak</h2>
-                        <p class="text-xl text-text-secondary italic">De la infraestructura tradicional a la nube.
-                            Aprendiz constante.</p>
-                    </div>
-
-                    <!-- Lado derecho: Foto (punto de atención principal - regla de los tercios) -->
-                    <div class="order-1 md:order-2 flex justify-center md:justify-end">
-                        <div class="relative">
-                            <div
-                                class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-daten-primary shadow-xl bg-bg-secondary">
-                                <!-- Reemplazar 'datenmaniak-foto.jpg' con la ruta de tu foto real -->
-                                <img src="images/about-me_resized.png" alt="Williams Patiño - datenmaniak"
-                                    class="w-full h-full object-cover">
-                            </div>
-                            <!-- Círculo decorativo detrás de la foto (opcional, refuerza la marca) -->
-                            <div
-                                class="absolute -bottom-3 -right-3 w-16 h-16 rounded-full bg-daten-primary opacity-20 -z-10">
-                            </div>
-                            <div
-                                class="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-daten-secondary opacity-20 -z-10">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Texto en 2 columnas (resto del contenido) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-
-                    <!-- Columna 1: Historia y formación -->
-                    <div class="space-y-4">
-                        <p class="text-text-primary leading-relaxed">
-                            Soy un administrador de sistemas de la vieja escuela. Durante <strong
-                                class="text-daten-primary">11 años</strong> trabajé en el departamento de operaciones de
-                            una gran institución, gestionando infraestructura crítica: servidores Linux y FreeBSD,
-                            firewalls, IDS/IPS, redes, correo corporativo, apoyo al departamento de desarrollo web y
-                            soporte a usuarios.
-                        </p>
-                        <p class="text-text-primary leading-relaxed">
-                            En 2015, dejé el empleo tradicional. Desde entonces trabajo de forma independiente, soy
-                            autodidacta y minucioso. Para mantenerme actualizado, combino cursos online, laboratorios
-                            prácticos en casa y muchos comandos en una consola Linux.
-                        </p>
-                    </div>
-
-                    <!-- Columna 2: Transición DevOps, filosofía y origen del nombre -->
-                    <div class="space-y-4">
-                        <p class="text-text-primary leading-relaxed">
-                            Hoy mi enfoque está en la transición a <strong class="text-daten-primary">DevOps y Cloud
-                                Native</strong>. He construido un <strong class="text-daten-primary">Home Lab</strong>
-                            con Proxmox, un cluster Kubernetes (k3s) y un firewall pfSense que simula un entorno cloud.
-                            También he desarrollado aplicaciones web con Laravel, PHP, HTML5, CSS3 y JavaScript.
-                        </p>
-                        <div class="bg-bg-secondary p-4 rounded-lg border-l-4 border-daten-primary mt-4">
-                            <p class="text-text-primary italic">
-                                "Mi filosofía: entender la infraestructura desde el hardware hasta el código. Mi
-                                herramienta favorita: la terminal. Mi objetivo: proporcionar soluciones de forma remota
-                                como Ingeniero DevOps."
-                            </p>
-                        </div>
-                        <p class="text-text-primary leading-relaxed mt-4">
-                            <strong class="text-daten-primary">¿Y por qué datenmaniak?</strong> Porque combina dos cosas
-                            que me definen: la precisión de los datos (<em>daten</em>, en alemán) y la pasión de quien
-                            disfruta lo que hace (<em>maniak</em>). No es solo un nombre. Es una declaración de
-                            principios.
-                        </p>
-                    </div>
-
-                </div>
-
+                <p class="text-lg text-text-primary mb-4">
+                    Aplico los conocimientos derivados de mi Homelab con el enfoque a la transición hacia el mundo
+                    DevOps y Cloud
+                    Native.
+                </p>
+                <p class="text-lg text-text-primary mb-4"> También he desarrollado aplicaciones web con Laravel, PHP,
+                    HTML5,
+                    CSS3 y JavaScript.</p>
+                <p class="text-lg text-text-primary mb-4"><strong>Mi filosofía:</strong> entender la infraestructura
+                    desde el
+                    hardware hasta el código y su aplicación. <strong>Mi herramienta favorita:</strong> la terminal.
+                    <strong> Mi
+                        objetivo:</strong>
+                    Proporcionar soluciones de forma remota como Ingeniero DevOps.
+                </p>
             </div>
         </section>
 
