@@ -28,8 +28,10 @@
 
     /* NUEVAS VARIABLES PARA OVERLAY DE IMÁGENES EN MODO LIGHT */
     /* Sugerido (menos blanco) -> imagen se ve mas, blanco se atenua */
-    --overlay-color: #D0C0E8;
-    --overlay-opacity: 0.40;
+    /* --overlay-color: #D0C0E8; */
+    /* --overlay-color: #57525e; */
+    --overlay-color: #464050;
+    --overlay-opacity: 0.80;
 }
 
 
@@ -462,8 +464,10 @@ section.visible .section-content {
 }
 
 .light #hero .overlay-visible {
-    background-color: var(--overlay-color, #F0EDF5);
-    opacity: var(--overlay-opacity, 0.60);
+    /* default: #F0EDF5 */
+    background-color: var(--overlay-color, #1e182a);
+    /* TODO: Observar */
+    opacity: var(--overlay-opacity, 0.85);
 }
 
 /* Contenido del Hero (por encima del overlay) */

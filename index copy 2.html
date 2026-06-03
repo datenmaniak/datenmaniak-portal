@@ -30,7 +30,6 @@
                         'daten-primary': '#7700F0',
                         'daten-secondary': '#673de6',
                         'daten-accent': '#7d2eff',
-                        'daten-neon': '#a366ff',      // Una versión pastel/brillante para textos pequeños en Modo Oscuro
                         'bg-primary': 'var(--bg-primary)',
                         'bg-secondary': 'var(--bg-secondary)',
                         'text-primary': 'var(--text-primary)',
@@ -61,6 +60,12 @@
         <i class="fas fa-bars text-2xl"></i>
     </button>
 
+    <!-- Navigation Drawer (menú lateral) -->
+    <!-- remove  -->
+    <!-- <div id="drawer"
+        class="fixed top-0 left-0 h-full w-64 bg-bg-secondary text-text-primary z-40 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl border-r border-border-primary">
+ -->
+    <!-- remove  -->
     <!-- ============================================
          DRAWER CON LOGO INTERNO (Alternativa A)
          ============================================
@@ -166,46 +171,23 @@
                     De la infraestructura tradicional
                     a la innovación
                 </h1>
+                <!-- Texto de apoyo (sutil, profesional) -->
+                <p class="text-lg ld:text-lg text-white mb-10 opacity-80 max-w-2xl mx-auto">
+                    11 años en operaciones de infraestructura. Ahora llevo esa
+                    experiencia a los contenedores y la nube.
+                </p>
 
                 <!-- Subtítulo interrogante (genera curiosidad) -->
                 <p class="text-xl md:text-3xl text-white mb-8 opacity-95">
-                    ¿Quiere sumar a su equipo un apoyo profesional que combine experiencia operativa y se
-                    apasiona por el ecosistema Cloud?
+                    ¿Su empresa está lista para adoptar<br>
+                    nuevas tecnologías y necesita talento humano?
                 </p>
 
 
-                <!-- Texto de apoyo (sutil, profesional) -->
-                <!-- <p class="text-lg ld:text-lg text-white mb-10 opacity-80 max-w-2xl mx-auto">
-                    11 años en operaciones de infraestructura. Ahora llevo esa
-                    experiencia a los contenedores y la nube.
-                </p> -->
-
-
-
                 <!-- CTA (botón principal) -->
-                <!-- <a href="#portafolio"
+                <a href="#habilidades"
                     class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-10 py-4 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105 text-lg">
-                    Explore mi Portafolio
-                </a> -->
-                <!-- CTA alternativa 1 -->
-                <!-- <a href="#portafolio"
-                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5 text-lg">
-                    Explore mi portafolio
-                </a> -->
-                <!-- CTA alternativa 2 -->
-                <!-- <a href="#portafolio"
-                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-medium px-9 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-daten-primary/40 focus:outline-none focus:ring-2 focus:ring-daten-primary focus:ring-offset-2 focus:ring-offset-slate-900 text-lg tracking-wide">
-                    Explore mi portafolio
-                </a> -->
-                <!-- CTA alternativa 3 -->
-                <a href="#portafolio"
-                    class="group inline-flex items-center gap-2 bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-10 py-4 rounded-lg transition-colors duration-300 shadow-lg text-lg">
-                    <span>Explore mi portafolio</span>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    Explore y puedo servirle...
                 </a>
 
             </div>
@@ -238,34 +220,7 @@
             <div class="overlay-visible z-0"></div>
 
             <div class="section-content relative z-10 max-w-6xl mx-auto px-4 py-20">
-
-                <!-- original design  -->
-                <!-- <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Servicios</h2> -->
-                <!-- Contenedor del Encabezado de Servicios -->
-                <div class="max-w-4xl mx-auto mb-12 px-4 text-center">
-
-                    <!-- El Área de Contención para Servicios -->
-                    <div class="inline-block px-10 py-5 md:px-14 md:py-6 rounded-lg transition-all duration-300
-        /* Modo Claro: Usa tu color secundario de fondo, sin bordes */
-        bg-white/25 border-none shadow-none
-        /* Modo Oscuro: Mantiene la estética de cristal oscuro de la sección anterior */
-        dark:bg-slate-900/40 dark:backdrop-blur-sm dark:border dark:border-slate-800/50">
-
-                        <!-- El H2 Optimizado -->
-                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white ">
-                            Mis <span
-                                class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Servicios</span>
-                            <!-- class="bg-clip-text text-transparent bg-gradient-to-r from-daten-primary to-daten-accent dark:from-daten-accent dark:to-purple-300">Servicios</span> -->
-
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-
-
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Servicios</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div
                         class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 border border-border-primary">
@@ -310,86 +265,42 @@
             <div class="overlay-visible z-0"></div>
 
             <div class="section-content  relative z-10 max-w-6xl mx-auto px-4 py-20 text-center">
-                <!-- original  -->
-                <!-- <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Portafolio y Proyectos -->
-                <!-- <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-slate-800 dark:text-slate-100 tracking-tight">
-                    Portafolio y <span class="text-daten-primary">Proyectos</span>
-                </h2> -->
-                <!-- <h2
-                    class="text-4xl md:text-5xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-daten-primary dark:from-white dark:to-daten-primary tracking-tight">
-                    Portafolio y Proyectos
-                </h2> -->
-                <!-- <div class="text-center mb-12">
-                    <span
-                        class="text-sm font-semibold uppercase tracking-widest text-daten-primary opacity-90 dark:opacity-100 block mb-2">
-                        Mi Trabajo
-                    </span>
-                    <h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
-                        Portafolio y Proyectos
-                    </h2>
-                </div> -->
-
-                <!-- Contenedor del Encabezado del Portafolio -->
-                <div class="max-w-4xl mx-auto mb-12 px-4 text-center">
-
-                    <div class="max-w-4xl mx-auto mb-12 px-4 text-center">
-
-                        <div class="inline-block px-8 py-5 md:px-12 md:py-6 rounded-lg transition-all duration-300
-                            /* Modo Claro: Sin bordes y fondo blanco mínimo */
-                            bg-white/25 backdrop-blur-[2px] border-none shadow-none
-                            /* Modo Oscuro: Mantiene el contraste sutil de cristal */
-                            dark:bg-slate-900/40 dark:border dark:border-slate-800/50">
-
-                            <h2
-                                class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white roboto">
-                                Portafolio y <span
-                                    class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Proyectos</span>
-                                <!-- class="bg-clip-text text-transparent bg-gradient-to-r from-daten-primary to-daten-accent dark:from-daten-accent dark:to-purple-300">Proyectos</span> -->
-                            </h2>
-
-                        </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 daten-primary">Portafolio y Proyectos
+                    <!-- <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-daten-primary">Portafolio y Proyectos -->
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Proyecto 1 -->
+                    <div class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
+                        <i class="fas fa-store text-3xl text-daten-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Tienda de Catálogo</h3>
+                        <p class="text-sm text-daten-primary mb-2">HTML5, CSS3, JavaScript, PHP</p>
+                        <p class="text-text-secondary text-sm mb-2">Laboratorio de aprendizaje full-stack para
+                            comprender herramientas esenciales de frontend y backend.</p>
+                        <p class="text-xs text-daten-accent">📚 En desarrollo (aprendizaje activo)</p>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
+                        <i class="fas fa-edit text-3xl text-daten-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Notas con Markdown</h3>
+                        <p class="text-sm text-daten-primary mb-2">Laravel, PHP, MySQL, Docker</p>
+                        <p class="text-text-secondary text-sm mb-2">App funcional con documentación técnica. Próxima
+                            fase: CI/CD.</p>
+                        <p class="text-xs text-daten-accent">✅ Funcional · CI/CD en progreso (aprendizaje activo)</p>
+                        <p class="text-xs text-daten-accent font-semibold">(Prototipo DevOps)</p>
 
                     </div>
-
-
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Proyecto 1 -->
-                        <div
-                            class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
-                            <i class="fas fa-store text-3xl text-daten-primary mb-3"></i>
-                            <h3 class="text-xl font-semibold mb-2">Catálogo/Tienda de Electrónicos</h3>
-                            <p class="text-sm text-daten-primary mb-2">HTML5, CSS3, JavaScript, PHP</p>
-                            <p class="text-text-secondary text-sm mb-2">Laboratorio de aprendizaje full-stack para
-                                comprender herramientas esenciales de frontend y backend.</p>
-                            <p class="text-xs text-daten-accent">📚 Introducción al Desarrollo Web</p>
-                        </div>
-                        <!-- Proyecto 2 -->
-                        <div
-                            class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
-                            <i class="fas fa-edit text-3xl text-daten-primary mb-3"></i>
-                            <h3 class="text-xl font-semibold mb-2">Notas con Markdown</h3>
-                            <p class="text-sm text-daten-primary mb-2">Laravel, PHP, MySQL, Docker</p>
-                            <p class="text-text-secondary text-sm mb-2">App funcional con documentación técnica. Próxima
-                                fase: CI/CD.</p>
-                            <p class="text-xs text-daten-accent">✅ Funcional · CI/CD en progreso (aprendizaje activo)
-                            </p>
-                            <p class="text-xs text-daten-accent font-semibold">(Prototipo DevOps)</p>
-
-                        </div>
-                        <!-- Proyecto 3 -->
-                        <div
-                            class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
-                            <i class="fas fa-cloud text-3xl text-daten-primary mb-3"></i>
-                            <h3 class="text-xl font-semibold mb-2">Home Lab Cloud-Native</h3>
-                            <p class="text-sm text-daten-primary mb-2">Proxmox, Kubernetes (k3s), pfSense, Docker</p>
-                            <p class="text-text-secondary text-sm mb-2">Infraestructura simulando entorno Cloud-Native
-                                con
-                                cluster K8s y firewall.</p>
-                            <p class="text-xs text-daten-accent">☸ Proyecto Operativo · Documentado</p>
-                            <p class="text-xs text-daten-accent font-semibold">(Base de operaciones y formación)</p>
-                        </div>
+                    <!-- Proyecto 3 -->
+                    <div class="bg-bg-secondary bg-opacity-90 p-6 rounded-lg shadow-lg border border-border-primary">
+                        <i class="fas fa-cloud text-3xl text-daten-primary mb-3"></i>
+                        <h3 class="text-xl font-semibold mb-2">Home Lab Cloud-Native</h3>
+                        <p class="text-sm text-daten-primary mb-2">Proxmox, Kubernetes (k3s), pfSense, Docker</p>
+                        <p class="text-text-secondary text-sm mb-2">Infraestructura simulando entorno Cloud-Native con
+                            cluster K8s y firewall.</p>
+                        <p class="text-xs text-daten-accent">☸ Proyecto Operativo · Documentado</p>
+                        <p class="text-xs text-daten-accent font-semibold">(Base de operaciones y formación)</p>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- HABILIDADES SECTION -->
