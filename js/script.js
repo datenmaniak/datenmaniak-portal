@@ -260,3 +260,136 @@ document.addEventListener('DOMContentLoaded', function () {
 // ============================================
 
 
+// ============================================
+// HERO CARROUSEL
+// ============================================
+// Propósito: Carrusel automático con fade, pausa en hover,
+// y controles manuales (puntos).
+//
+// PARÁMETROS:
+// - Intervalo: 7000 ms (7 segundos)
+// - Transición: fade (CSS)
+// - Comportamiento: automático + manual + pausa en hover
+//
+// CÓMO DESHABILITAR: Comentar o eliminar este bloque
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Elementos del carrusel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const heroSection = document.getElementById('hero');
+
+    let currentSlide = 0;
+    let slideInterval;
+    let isPaused = false;
+
+    // Función para mostrar un slide específico
+    function showSlide(index) {
+        // Validar índice
+        if (index < 0) index = 0;
+        if (index >= slides.length) index = 0;
+
+        // Ocultar todos los slides
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        // Mostrar el slide seleccionado
+        slides[index].classList.add('active');
+
+        // Actualizar puntos indicadores
+        dots.forEach((dot, i) => {
+            if (i === index) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+
+        currentSlide = index;
+    }
+
+    // Función para avanzar al siguiente slide
+    function nextSlide() {
+        let nextIndex = currentSlide + 1;
+        if (nextIndex >= slides.length) {
+            nextIndex = 0;
+        }
+        showSlide(nextIndex);
+    }
+
+    // Iniciar el carrusel automático
+    function startCarousel() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+        }
+        slideInterval = setInterval(() => {
+            if (!isPaused) {
+                nextSlide();
+            }
+        }, 7000); // 7 segundos
+    }
+
+    // Detener el carrusel automático
+    function stopCarousel() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+            slideInterval = null;
+        }
+    }
+
+    // Pausar el carrusel (sin detenerlo completamente)
+    function pauseCarousel() {
+        isPaused = true;
+    }
+
+    // Reanudar el carrusel
+    function resumeCarousel() {
+        isPaused = false;
+    }
+
+    // Eventos para los puntos indicadores
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+            // Reiniciar el temporizador después de interacción manual
+            stopCarousel();
+            startCarousel();
+        });
+    });
+
+    // Pausa en hover sobre la sección Hero
+    if (heroSection) {
+        heroSection.addEventListener('mouseenter', () => {
+            pauseCarousel();
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+            resumeCarousel();
+        });
+    }
+
+    // Iniciar el carrusel
+    if (slides.length > 0) {
+        showSlide(0);
+        startCarousel();
+    }
+
+    // (Opcional) Detener carrusel si la página no es visible (ahorro de recursos)
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            stopCarousel();
+        } else {
+            startCarousel();
+        }
+    });
+
+});
+
+// ============================================
+// FIN HERO CARROUSEL
+// ============================================
+
+

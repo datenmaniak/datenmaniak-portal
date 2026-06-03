@@ -27,9 +27,9 @@
     --card-bg-opaque: rgba(255, 255, 255, 0.95);
 
     /* NUEVAS VARIABLES PARA OVERLAY DE IMÁGENES EN MODO LIGHT */
-    --overlay-color: #E8E0F5;
+    --overlay-color: #3f3f46;
     /* Color del overlay (violeta suave) */
-    --overlay-opacity: 0.45;
+    --overlay-opacity: 0.850;
     /* Opacidad reducida para ver mejor la imagen */
 }
 
@@ -422,4 +422,109 @@ section.visible .section-content {
 
 /* ============================================
    FIN ABOUT
+   ============================================ */
+
+
+/* ============================================
+   HERO CARROUSEL
+   ============================================
+   Propósito: Carrusel de imágenes de fondo con
+   transición suave (fade), controles manuales,
+   y pausa en hover.
+   
+   IMÁGENES: 3 máximo (hero-bg-1.jpg, hero-bg-2.jpg, hero-bg-3.jpg)
+   VELOCIDAD: 7 segundos entre cambios
+   TRANSICIÓN: Fade (opacidad)
+   COMPORTAMIENTO: Automático + pausa en hover + controles manuales
+   
+   CÓMO DESHABILITAR: Comentar o eliminar este bloque
+   ============================================ */
+
+/* Contenedor del carrusel */
+#hero-carousel {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Cada slide */
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Slide activo (visible) */
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Overlay para legibilidad (usa las variables de modo Dark/Light) */
+#hero .overlay-visible {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: #0A0A0F;
+    opacity: 0.60;
+}
+
+.light #hero .overlay-visible {
+    background-color: var(--overlay-color, #F0EDF5);
+    opacity: var(--overlay-opacity, 0.60);
+}
+
+/* Contenido del Hero (por encima del overlay) */
+#hero .section-content {
+    position: relative;
+    z-index: 3;
+}
+
+/* Indicadores (puntos) */
+.carousel-indicators {
+    z-index: 3;
+}
+
+.carousel-dot {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    width: 2rem;
+    background-color: #7700F0;
+    opacity: 1;
+}
+
+/* Pausa en hover sobre el Hero */
+#hero:hover .carousel-slide {
+    transition: none;
+}
+
+#hero:hover .carousel-timer {
+    animation-play-state: paused;
+}
+
+/* Ajuste para móviles: reducir opacidad del overlay y desactivar hover complex */
+@media (max-width: 768px) {
+    #hero .overlay-visible {
+        opacity: 0.70;
+    }
+
+    .carousel-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-dot.active {
+        width: 24px;
+    }
+}
+
+/* ============================================
+   FIN HERO CARROUSEL
    ============================================ */

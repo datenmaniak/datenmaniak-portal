@@ -61,42 +61,9 @@
     </button>
 
     <!-- Navigation Drawer (menú lateral) -->
-    <!-- remove  -->
-    <!-- <div id="drawer"
-        class="fixed top-0 left-0 h-full w-64 bg-bg-secondary text-text-primary z-40 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl border-r border-border-primary">
- -->
-    <!-- remove  -->
-    <!-- ============================================
-         DRAWER CON LOGO INTERNO (Alternativa A)
-         ============================================
-         PROPÓSITO: El drawer contiene el logo "datenmaniak"
-         junto al botón de cierre. El logo es clickeable
-         y navega al inicio.
-         
-         CÓMO DESHABILITAR: Comentar o eliminar este bloque
-         y restaurar el drawer original.
-    ============================================ -->
     <div id="drawer"
-        class="fixed top-0 left-0 h-full w-64 bg-bg-secondary text-text-primary z-50 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl border-r border-border-primary">
-
-        <div class="p-6 pt-8">
-
-            <!-- Cabecera del drawer (logo + botón cierre) -->
-            <div class="flex items-center justify-between p-4 border-b border-border-primary">
-                <!-- Logo clickeable dentro del drawer -->
-                <!-- <a href="#hero" id="drawer-logo-link"
-                    class="text-right text-daten-primary font-semibold text-lg md:text-xl tracking-wide hover:opacity-80 transition-opacity"> -->
-                <!-- <a href="#hero-X" id="drawer-logo-link"
-                    class="text-daten-primary font-semibold text-lg md:text-xl tracking-wide hover:opacity-80 transition-opacity ml-auto mr-2 -mt-2">
-                    datenmaniak
-                </a> -->
-                <span
-                    class="text-daten-primary font-semibold text-xl sm:text-2xl md:text-xl tracking-wide ml-auto mr-2 -mt-1">
-                    <!-- <span class="text-daten-primary font-semibold text-lg md:text-xl tracking-wide ml-auto mr-2 -mt-1"> -->
-                    datenmaniak
-                </span>
-            </div>
-
+        class="fixed top-0 left-0 h-full w-64 bg-bg-secondary text-text-primary z-40 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-2xl border-r border-border-primary">
+        <div class="p-6 pt-20">
             <nav class="flex flex-col space-y-4">
                 <a href="#hero" class="drawer-link hover:text-daten-primary transition-colors"><i
                         class="fas fa-home mr-3"></i>Inicio</a>
@@ -124,88 +91,22 @@
 
     <main>
 
-
-        <!-- HERO SECTION WITH CARROUSEL -->
-        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-
-            <!-- Carrusel de imágenes de fondo -->
-            <div id="hero-carousel" class="absolute inset-0 z-0">
-                <div class="carousel-slide active"
-                    style="background-image: url('images/hero-bg-1.jpg'); background-size: cover; background-position: center;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-2.jpg'); background-size: cover; background-position: center;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-3.jpg'); background-size: cover; background-position: center;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-4.jpg'); background-size: cover; background-position: center;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-5.jpg'); background-size: cover; background-position: center;">
-                </div>
+        <!-- HERO SECTION -->
+        <section id="hero" class="min-h-screen flex items-center justify-center relative parallax" data-speed="0.5"
+            style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <!-- <div class="absolute inset-0 bg-bg-primary opacity-70 z-0"></div> -->
+            <div class="overlay-visible z-0"></div>
+            <div class="section-content relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 text-daten-primary">datenmaniak</h1>
+                <p class="text-xl md:text-2xl  mb-6 text-lg text-text-primary mb-4">Administrador de sistemas con 11
+                    años de experiencia
+                    en infraestructura IT tradicional. Hoy en dia, hacia la transición a DevOps y Cloud Native desde mi
+                    Home Lab.
+                    Convencido de que la consola de terminal y un navegador web son las mejores herramientas.</p>
+                <a href="#portafolio"
+                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg">Ver
+                    Portafolio</a>
             </div>
-
-            <!-- Overlay para legibilidad del texto -->
-            <div class="overlay-visible z-1"></div>
-
-            <!-- Contenido del Hero -->
-            <!-- <div class="section-content relative z-10 text-center px-4 max-w-4xl mx-auto">
-                <p class="text-xl md:text-2xl text-white mb-6 leading-relaxed">
-                    Linux · FreeBSD · pfSense · Docker · Kubernetes (aprendiendo)
-                </p>
-                <p class="text-lg md:text-xl text-white mb-8 opacity-90">
-                    Disciplina operativa + Curiosidad técnica. ¿Coincidimos?
-                </p>
-                <a href="#trayectoria"
-                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105">
-                    Explora mi trayectoria
-                </a>
-            </div> -->
-            <!-- Contenido del Hero -->
-            <div class="section-content relative z-10 text-center px-4 max-w-5xl mx-auto">
-
-                <!-- Título principal (grande, impactante) -->
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                    De la infraestructura tradicional
-                    a la innovación
-                </h1>
-
-                <!-- Subtítulo interrogante (genera curiosidad) -->
-                <p class="text-xl md:text-3xl text-white mb-8 opacity-95">
-                    ¿Su empresa está lista para adoptar<br>
-                    nuevas tecnologías sin perder el control y necesita talento humano?
-                </p>
-
-                <!-- Texto de apoyo (sutil, profesional) -->
-                <p class="text-lg ld:text-lg text-white mb-10 opacity-80 max-w-2xl mx-auto">
-                    11 años haciendo en operaciones. Ahora llevo esa
-                    experiencia a los contenedores y la nube.
-                </p>
-
-                <!-- CTA (botón principal) -->
-                <a href="#trayectoria"
-                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-10 py-4 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105 text-lg">
-                    Explore mi trayectoria
-                </a>
-
-            </div>
-
-            <!-- Indicadores del carrusel (puntos) -->
-            <div class="carousel-indicators absolute bottom-8 left-0 right-0 z-10 flex justify-center gap-3">
-                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
-                    data-slide="0"></button>
-                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
-                    data-slide="1"></button>
-                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
-                    data-slide="2"></button>
-                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
-                    data-slide="2"></button>
-                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
-                    data-slide="2"></button>
-            </div>
-
         </section>
 
 
