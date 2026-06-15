@@ -590,3 +590,53 @@ section.visible .section-content {
         background-attachment: fixed;
     }
 }
+
+/* ======
+branding logo
+==== */
+.sidebar-brand {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    /* Tipografía técnica */
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-color);
+    /* Se adapta a tu modo oscuro/claro */
+    letter-spacing: -0.5px;
+}
+
+.brand-prompt {
+    color: #7700F0;
+    /* Tu color de marca para el prompt */
+    margin-right: 4px;
+}
+
+.brand-cursor {
+    color: #7700F0;
+    animation: blink 1s infinite;
+    font-weight: 300;
+}
+
+/* @keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+} */
+
+@keyframes blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}

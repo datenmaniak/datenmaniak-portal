@@ -69,37 +69,19 @@
     </script>
 </head>
 
-<body
-    class="bg-bg-primary text-text-primary font-roboto transition-colors duration-300 overflow-x-hidden w-full relative">
+<body class="bg-bg-primary text-text-primary font-roboto transition-colors duration-300">
 
     <!-- Botón Dark/Light Mode -->
-    <!-- <button id="theme-toggle"
-        class="fixed top-5 right-5 z-50 p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none">
-        <i id="theme-icon" class="fas fa-moon text-xl"></i>
-    </button> -->
-    <!-- <button id="theme-toggle"
-        class="fixed top-5 right-4 sm:right-5 z-50 p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none select-none">
-        <i id="theme-icon" class="fas fa-moon text-xl"></i>
-    </button> -->
-    <!-- <button id="theme-toggle"
-        class="fixed top-5 right-4 sm:right-5 z-[100] p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none select-none">
-        <i id="theme-icon" class="fas fa-moon text-xl"></i>
-    </button> -->
     <button id="theme-toggle"
-        class="fixed top-5 right-5 z-[100] p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none select-none">
+        class="fixed top-5 right-5 z-50 p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none">
         <i id="theme-icon" class="fas fa-moon text-xl"></i>
     </button>
 
     <!-- Botón hamburguesa (menú lateral) -->
-    <!-- <button id="menu-btn"
+    <button id="menu-btn"
         class="fixed top-5 left-5 z-50 p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none">
         <i class="fas fa-bars text-2xl"></i>
-    </button> -->
-    <button id="menu-btn"
-        class="fixed top-5 left-5 z-[100] p-3 bg-bg-secondary text-daten-primary rounded-lg shadow-lg hover:bg-daten-primary hover:text-white transition-all duration-300 focus:outline-none select-none">
-        <i class="fas fa-bars text-2xl"></i>
     </button>
-
 
     <!-- ============================================
          DRAWER CON LOGO INTERNO (Alternativa A)
@@ -165,15 +147,9 @@
     <main>
 
         <!-- HERO SECTION WITH CARROUSEL -->
-        <!-- <section id="hero" 
-            class="relative min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-300">
-             -->
-        <section id="hero" class="relative min-h-screen
-             flex items-center justify-center
-             overflow-x-hidden overflow-y-hidden
-              transition-colors duration-300">
+        <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-            <!-- 
+            <!-- Carrusel de imágenes de fondo -->
             <div id="hero-carousel" class="absolute inset-0 z-0">
                 <div class="carousel-slide active"
                     style="background-image: url('images/hero-bg-1.jpg'); background-size: cover; background-position: center;">
@@ -190,110 +166,99 @@
                 <div class="carousel-slide"
                     style="background-image: url('images/hero-bg-5.jpg'); background-size: cover; background-position: center;">
                 </div>
-            </div> -->
-            <div id="hero-carousel" class="absolute inset-0 z-0">
-                <div class="carousel-slide active"
-                    style="background-image: url('images/hero-bg-1.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-2.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-3.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-4.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                </div>
-                <div class="carousel-slide"
-                    style="background-image: url('images/hero-bg-5.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-                </div>
             </div>
 
+            <!-- Overlay para legibilidad del texto -->
+            <div class="overlay-visible z-1"></div>
 
-            <!-- Opacidad light mode  -->
-            <!-- Opción 1: Más contraste y visibilidad de las fotos (Recomendada) -->
-            <div
-                class="absolute inset-0 z-1 bg-white/45 backdrop-blur-[4px] dark:bg-black/60 dark:backdrop-blur-[3px] transition-all duration-300">
-                <!-- class="absolute inset-0 z-1 bg-white/25 backdrop-blur-[5px] dark:bg-black/60 dark:backdrop-blur-none transition-all duration-300"> -->
-            </div>
-
-            <!-- Opción 2: Efecto "Gris Tecnológico" suave -->
-            <!-- <div class="absolute inset-0 z-1 bg-slate-200/60 backdrop-blur-[2px] dark:bg-black/60 dark:backdrop-blur-none
-                transition-all duration-300">
+            <!-- Contenido del Hero -->
+            <!-- <div class="section-content relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <p class="text-xl md:text-2xl text-white mb-6 leading-relaxed">
+                    Linux · FreeBSD · pfSense · Docker · Kubernetes (aprendiendo)
+                </p>
+                <p class="text-lg md:text-xl text-white mb-8 opacity-90">
+                    Disciplina operativa + Curiosidad técnica. ¿Coincidimos?
+                </p>
+                <a href="#trayectoria"
+                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105">
+                    Explora mi trayectoria
+                </a>
             </div> -->
+            <!-- Contenido del Hero -->
+            <div class="section-content relative z-10 text-center px-4 max-w-5xl mx-auto">
 
-            <div class="relative z-10 max-w-5xl mx-auto px-4 md:px-8 text-center flex flex-col items-center">
+                <!--  a la fecha de: 14.06.26 -->
+                <!-- Título principal (grande, impactante)
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    SysAdmin Senior en Transición al Ecosistema DevOps
+                </h1>
+                Subtítulo interrogante (genera curiosidad)
+                <p class="text-xl md:text-3xl text-white mb-8 opacity-95">SysAdmin especializado en infraestructura
+                    Linux y redes. Actualmente uso mi HomeLab para dominar el flujo de trabajo DevOps, aplicando
+                    Kubernetes y GitOps bajo estándares de producción.
+                </p> -->
 
-                <!-- <div
-                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(119,0,240,0.08)] dark:bg-[rgba(119,0,240,0.15)] border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] mb-6 animate-fade-in-down select-none">
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#46F000] opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#7700F0]"></span>
-                    </span>
-                    <span class="text-xs font-mono font-bold tracking-wider text-[#CFA1FF] uppercase">Linux Infra &
-                        DevOps Engineer</span>
-                </div> -->
-                <div
-                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(119,0,240,0.06)] dark:bg-[rgba(119,0,240,0.15)] border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] mb-6 animate-fade-in-down select-none">
-
-                    <span class="relative flex h-2 w-2">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#46F000] opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#46F000]"></span>
-                    </span>
-
-                    <span
-                        class="text-xs font-mono font-bold tracking-wider text-[#7700F0] dark:text-[#CFA1FF] uppercase">
-                        Linux Infra & DevOps Engineer
-                    </span>
-
-                </div>
-
-                <h1
-                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#1A1A2E] dark:text-white tracking-tight leading-none mb-6 max-w-4xl transition-colors duration-300">
-                    Construyendo Infraestructuras <br class="hidden sm:inline">
-                    <span class="text-[#7700F0]">Escalables y Seguras</span>
+                <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">
+                    De SysAdmin a DevOps
                 </h1>
 
-                <!-- <p
-                    class="text-base sm:text-lg md:text-xl text-[#4A4A5A] dark:text-gray-200 max-w-2xl font-normal leading-relaxed mb-10 transition-colors duration-300">
-                    Especialista en administración de sistemas Linux, automatización y despliegue de arquitecturas
-                    cloud. Optimizando el rendimiento y la disponibilidad de operaciones críticas.
-                </p> -->
-                <p
-                    class="text-base sm:text-lg md:text-xl text-[#1A1A2E] dark:text-gray-200 max-w-2xl font-medium leading-relaxed mb-10 transition-colors duration-300">
-                    Sólida experiencia en administración de infraestructura Linux, evolucionando hacia metodologías
-                    DevOps y Cloud Native mediante ingeniería práctica en mi HomeLab
+                <p class="text-base md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+                    11 años en sistemas Linux evolucionando hacia Cloud Native. Automatizo y orquesto entornos reales
+                    desde mi HomeLab.
                 </p>
 
+                <!-- CTA (botón principal) -->
+                <!-- <a href="#portafolio"
+                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-10 py-4 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105 text-lg">
+                    Explore mi Portafolio
+                </a> -->
+                <!-- CTA alternativa 1 -->
+                <!-- <a href="#portafolio"
+                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5 text-lg">
+                    Explore mi portafolio
+                </a> -->
+                <!-- CTA alternativa 2 -->
+                <!-- <a href="#portafolio"
+                    class="inline-block bg-daten-primary hover:bg-daten-secondary text-white font-medium px-9 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-daten-primary/40 focus:outline-none focus:ring-2 focus:ring-daten-primary focus:ring-offset-2 focus:ring-offset-slate-900 text-lg tracking-wide">
+                    Explore mi portafolio
+                </a> -->
+
+                <!-- CTA alternativa 3 -->
+                <!-- <a href="#trayectoria"
+                    class="group inline-flex items-center gap-2 bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-10 py-4 rounded-lg transition-colors duration-300 shadow-lg text-lg">
+                    <span>Explore mi portafolio</span>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a> -->
+                <!-- CTA Optimizado (Cambio quirúrgico en destino, espaciado y tamaño móvil) -->
                 <a href="#portafolio"
-                    class="group inline-flex items-center gap-3 bg-[#7700F0] text-white font-bold text-sm md:text-base px-6 py-3.5 rounded-xl shadow-lg hover:bg-[#6200CC] hover:shadow-[#7700F0]/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
-                    <span>Ver el portafolio</span>
+                    class="group inline-flex items-center justify-center gap-2 bg-daten-primary hover:bg-daten-secondary text-white font-semibold px-6 md:px-10 py-3.5 md:py-4 rounded-lg transition-colors duration-300 shadow-lg text-base md:text-lg w-full sm:w-auto">
+                    <span>Explorar el portafolio</span>
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4 md:h-5 md:w-5 transform transition-transform duration-300 group-hover:translate-x-1"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </a>
+
+
             </div>
 
+            <!-- Indicadores del carrusel (puntos) -->
             <div class="carousel-indicators absolute bottom-8 left-0 right-0 z-10 flex justify-center gap-3">
-                <button
-                    class="carousel-dot w-3 h-3 rounded-full bg-[#7700F0] dark:bg-white bg-opacity-30 dark:bg-opacity-40 transition-all duration-300"
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
                     data-slide="0"></button>
-                <button
-                    class="carousel-dot w-3 h-3 rounded-full bg-[#7700F0] dark:bg-white bg-opacity-30 dark:bg-opacity-40 transition-all duration-300"
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
                     data-slide="1"></button>
-                <button
-                    class="carousel-dot w-3 h-3 rounded-full bg-[#7700F0] dark:bg-white bg-opacity-30 dark:bg-opacity-40 transition-all duration-300"
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
                     data-slide="2"></button>
-                <button
-                    class="carousel-dot w-3 h-3 rounded-full bg-[#7700F0] dark:bg-white bg-opacity-30 dark:bg-opacity-40 transition-all duration-300"
-                    data-slide="3"></button>
-                <button
-                    class="carousel-dot w-3 h-3 rounded-full bg-[#7700F0] dark:bg-white bg-opacity-30 dark:bg-opacity-40 transition-all duration-300"
-                    data-slide="4"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
+                    data-slide="2"></button>
+                <button class="carousel-dot w-3 h-3 rounded-full bg-white bg-opacity-50 transition-all duration-300"
+                    data-slide="2"></button>
             </div>
 
         </section>
