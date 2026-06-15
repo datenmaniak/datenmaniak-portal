@@ -521,3 +521,72 @@ section.visible .section-content {
 /* ============================================
    FIN HERO CARROUSEL
    ============================================ */
+
+
+
+/* ============================================
+   PORTAFOLIO
+   ============================================ */
+
+/* Configuración de la imagen de fondo administrada desde CSS */
+/* .portfolio-custom-bg {
+    background-image: linear-gradient(var(--overlay-color, rgba(70, 64, 80, 0.8)), var(--overlay-color, rgba(70, 64, 80, 0.8))), url('../images/portafolio-bg.jpg');
+    background-size: cover;
+    background-position: center;
+} */
+
+/* En Modo Oscuro, cambiamos el filtro para que la imagen se integre con el fondo negro cibernético */
+/* .dark .portfolio-custom-bg {
+    background-image: linear-gradient(rgba(10, 10, 15, 0.88), rgba(10, 10, 15, 0.88)), url('../images/portafolio-bg.jpg');
+} */
+
+/* 1. MODO CLARO (Por defecto) */
+.portfolio-custom-bg {
+    /* Creamos una capa blanca translúcida (opacidad 88%) sobre la imagen */
+    background-image: linear-gradient(rgba(248, 246, 250, 0.88),
+            rgba(248, 246, 250, 0.88)), url('../images/portafolio-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2. MODO OSCURO (Cuando se activa la clase .dark en el HTML) */
+.dark .portfolio-custom-bg {
+    /* Cambiamos a una capa oscura profunda (opacidad 90%) sobre la misma imagen */
+    background-image: linear-gradient(rgba(10, 10, 15, 0.90),
+            rgba(10, 10, 15, 0.90)), url('../images/portafolio-bg.jpg');
+}
+
+/* Optimización Responsiva: Parallax fijo SOLO en pantallas grandes (Computadoras) */
+@media (min-width: 768px) {
+    .portfolio-custom-bg {
+        background-attachment: fixed;
+    }
+}
+
+/* ============================================
+   SERVICIOS
+   ============================================ */
+
+/* MODO CLARO: Capa clara sobre la imagen de servicios */
+.services-custom-bg {
+    background-image: linear-gradient(rgba(210, 190, 229, 0.608),
+            rgba(231, 220, 242, 0.88)),
+        url('../images/servicios-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* MODO OSCURO: Capa oscura profunda sobre la imagen */
+.dark .services-custom-bg {
+    background-image: linear-gradient(rgba(31, 31, 43, 0.672),
+            rgba(10, 10, 15, 0.804)),
+        url('../images/servicios-bg.jpg');
+    /* background-image: linear-gradient(rgba(10, 10, 15, 0.90), */
+}
+
+/* Control responsivo para evitar lentitud de scroll en móviles */
+@media (min-width: 768px) {
+    .services-custom-bg {
+        background-attachment: fixed;
+    }
+}
