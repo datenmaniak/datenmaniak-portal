@@ -4,29 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-    <!-- Meta etiquetas estándar -->
-    <meta name="description"
-        content="Consultoría informática y soporte de infraestructura. Soluciones eficientes y a medida para sistemas y operaciones.">
-
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://datenmaniak.com/">
-    <meta property="og:title" content="datenmaniak | Consultoría Informática & Soporte de Infraestructura">
-    <meta property="og:description"
-        content="Soluciones a medida en administración de sistemas e infraestructura tecnológica.">
-    <meta property="og:image" content="https://datenmaniak.com/assets/img/preview-portfolio.jpg">
-
-    <!-- Twitter / X -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://datenmaniak.com/">
-    <meta property="twitter:title" content="datenmaniak | Consultoría Informática & Soporte de Infraestructura">
-    <meta property="twitter:description"
-        content="Soluciones a medida en administración de sistemas e infraestructura tecnológica.">
-    <meta property="twitter:image" content="https://datenmaniak.com/assets/img/preview-portfolio.jpg">
-
-
-    <title>datenmaniak | Infrastructure & DevOps </title>
+    <title>datenmaniak | Linux Infrastructure & DevOps </title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -808,7 +786,6 @@
             </div>
         </section>
 
-        <!-- aqui  -->
         <!-- TRAYECTORIA PROFESIONAL SECTION -->
         <section id="trayectoria"
             class="min-h-screen flex items-center justify-center bg-[#F8F6FA] dark:bg-[#0A0A0F] py-20 px-4 md:px-8 transition-colors duration-300 relative">
@@ -831,185 +808,163 @@
                     </h2>
                     <p
                         class="text-sm md:text-base text-[#6B6B7A] dark:text-[#B0B0B0] max-w-2xl mx-auto transition-colors">
-                        Línea de evolución técnica: desde la administración de infraestructura de Estado a gran escala
-                        hasta la automatización y orquestación del ecosistema Cloud-Native.
+                        Historial cronológico de roles, operaciones en entornos críticos internacionales y consolidación
+                        tecnológica.
                     </p>
                 </div>
 
-                <!-- TIMELINE OPTIMIZADO (4 Grandes Bloques Estratégicos) -->
+                <!-- LINEA DE TIEMPO (Sustituye a la antigua Tabla 1 de Excel) -->
                 <div
-                    class="relative border-l-2 border-[rgba(119,0,240,0.2)] dark:border-[rgba(119,0,240,0.3)] ml-4 md:mx-auto md:max-w-3xl space-y-12 py-4 mb-20">
+                    class="relative border-l-2 border-[rgba(119,0,240,0.2)] dark:border-[rgba(119,0,240,0.3)] ml-4 md:mx-auto md:max-w-3xl space-y-10 py-4 mb-20">
 
-                    <!-- NODO 1: Consolidación Cloud-Native y Desarrollo (Presente) -->
+                    <!-- Hito 0: Consolidación Base (Tus 11 años de operaciones core indispensables para la jerarquía) -->
                     <div class="relative pl-6 md:pl-8 group">
-                        <!-- Punto en la línea con efecto pulso sutil -->
+                        <!-- Nodo indicador en la línea -->
                         <div
                             class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
                         </div>
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Nov 2024 -
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Pre - 2015</span>
+                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
+                                    class="fas fa-map-marker-alt text-[10px] mr-1"></i> Sede Central</span>
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <h3 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">
+                                Administrador de Sistemas e Infraestructura Core</h3>
+                            <p class="text-xs font-semibold text-[#7700F0] mb-2">Gran Institución Organizacional (11
+                                años)</p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">Gestión
+                                conjunta de operaciones críticas, orquestación de servidores Linux/FreeBSD, firewalls
+                                perimetrales, IDS/IPS, redes empresariales y soporte de infraestructura a gran escala.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 1: Suiza n-Vision -->
+                    <div class="relative pl-6 md:pl-8 group">
+                        <div
+                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">2015 - 2016</span>
+                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
+                                    class="fas fa-map-marker-alt text-[10px] mr-1"></i> Suiza (Remoto)</span>
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <h3 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">System
+                                Administrator</h3>
+                            <p class="text-xs font-semibold text-[#7700F0] mb-2">n-Vision GmbH</p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
+                                Implementación de perímetros pfSense y servidores colaborativos Zimbra. <strong
+                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">Logro:</strong>
+                                Optimización verificada del 40% en rendimiento de red.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 2: Suiza Neuhauf -->
+                    <div class="relative pl-6 md:pl-8 group">
+                        <div
+                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">2017</span>
+                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
+                                    class="fas fa-map-marker-alt text-[10px] mr-1"></i> Suiza (Remoto)</span>
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <h3 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">System
+                                Integrator</h3>
+                            <p class="text-xs font-semibold text-[#7700F0] mb-2">Neuhauf AG</p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">Integración
+                                de sistemas y modernización de redes de comunicación masivas. <strong
+                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">Logro:</strong>
+                                Optimización del 50% en infraestructuras de telecomunicaciones.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 3: NET7 Perú -->
+                    <div class="relative pl-6 md:pl-8 group">
+                        <div
+                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">2018 - 2019</span>
+                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
+                                    class="fas fa-map-marker-alt text-[10px] mr-1"></i> Perú</span>
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <h3 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">Network
+                                & Systems Engineer</h3>
+                            <p class="text-xs font-semibold text-[#7700F0] mb-2">NET7 SAC</p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
+                                Automatización de flujos operativos mediante scripting en Python y Bash. Gestión y
+                                migración crítica de plataformas Zimbra con más de 600 cuentas activas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 4: Grupo Jules -->
+                    <div class="relative pl-6 md:pl-8 group">
+                        <div
+                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">2020</span>
+                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
+                                    class="fas fa-map-marker-alt text-[10px] mr-1"></i> Venezuela</span>
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
+                            <h3 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">IT
+                                Manager</h3>
+                            <p class="text-xs font-semibold text-[#7700F0] mb-2">GRUPO JULES</p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">Liderazgo
+                                técnico en la adopción temprana de contenedores Docker para equipos de desarrollo,
+                                virtualización masiva (Hyper-V), entornos NAS y pfSense. <strong
+                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">Logro:</strong> Repunte del
+                                40% en eficiencia de red.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 5: Presente datenmaniak -->
+                    <div class="relative pl-6 md:pl-8 group">
+                        <div
+                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">2021 -
                                 Presente</span>
                             <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
-                                    class="fas fa-laptop-code text-[10px] mr-1"></i> Caracas, VE · Híbrido</span>
+                                    class="fas fa-laptop-code text-[10px] mr-1"></i> Operación Independiente</span>
                         </div>
                         <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] shadow-md group-hover:shadow-lg transition-all duration-300 border-dashed">
-                            <h3 class="text-lg font-bold text-[#7700F0] transition-colors">IT Freelancer & Cloud-Native
-                                Core</h3>
-                            <p class="text-xs font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-3">Proyecto Personal:
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-5 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] shadow-md group-hover:shadow-lg transition-all duration-300 border-dashed">
+                            <h3 class="text-base font-bold text-[#7700F0] transition-colors">Consultor de
+                                Infraestructura & Ecosistema Cloud-Native</h3>
+                            <p class="text-xs font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2">Proyecto:
                                 datenmaniak</p>
-                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed mb-3">
-                                Dedicación completa a la transición estructurada hacia metodologías DevOps. Diseño y
-                                despliegue automatizado en HomeLab utilizando entornos Proxmox VE, clúster de
-                                orquestación Kubernetes (k3s) e independencia perimetral con pfSense. Gestión del flujo
-                                completo de desarrollo de aplicaciones web (Laravel, PHP, PostgreSQL) y documentación
-                                versionada en repositorios GitHub.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- NODO 2: Consultoría TI y Reingeniería Operacional (2019 - 2023) -->
-                    <div class="relative pl-6 md:pl-8 group">
-                        <div
-                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
-                        </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Nov 2019 - Feb
-                                2023</span>
-                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
-                                    class="fas fa-briefcase text-[10px] mr-1"></i> Consultoría Independiente /
-                                Corporativa</span>
-                        </div>
-                        <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
-                            <h3 class="text-lg font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">IT
-                                Consultant & IT Manager</h3>
-                            <p class="text-xs font-semibold text-[#7700F0] mb-3">Freelance / Grupo Jules</p>
-                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
-                                Liderazgo en reingeniería de departamentos de TI y migración de sistemas críticos a la
-                                nube. Consultoría de hardware a gran escala enfocada en la monitorización de
-                                rendimiento, auditorías de seguridad forense y optimización energética de
-                                infraestructura física. Implementación de almacenamiento centralizado NAS, túneles VPN
-                                empresariales y virtualización con Hyper-V, logrando un <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">40% de optimización en
-                                    telecomunicaciones</strong>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- NODO 3: Ingeniería de Sistemas Internacional (2015 - 2019) -->
-                    <div class="relative pl-6 md:pl-8 group">
-                        <div
-                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
-                        </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Jun 2015 - Feb
-                                2019</span>
-                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
-                                    class="fas fa-globe text-[10px] mr-1"></i> Suiza / Perú</span>
-                        </div>
-                        <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
-                            <h3 class="text-lg font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">Network &
-                                Systems Engineer</h3>
-                            <p class="text-xs font-semibold text-[#7700F0] mb-3">Neuhauf AG · n-Vision GmbH (Suiza) /
-                                NET7 SAC (Perú)</p>
-                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
-                                Despliegue internacional de servidores corporativos sobre Red Hat, CentOS y Nutanix.
-                                Rediseño completo de topologías de red e inventario de vulnerabilidades bajo políticas
-                                perimetrales pfSense, alcanzando una <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">optimización de
-                                    telecomunicaciones de entre el 40% y 50%</strong>. Automatización de tareas de alta
-                                disponibilidad mediante scripts en Bash y Python, junto a la administración de telefonía
-                                VoIP Asterisk y la migración crítica de más de <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">600 cuentas de correo
-                                    Zimbra</strong>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- NODO 4: Infraestructura de Estado y Despliegues Globales (2003 - 2015) -->
-                    <!-- <div class="relative pl-6 md:pl-8 group">
-                        <div
-                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
-                        </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Dic 2003 - Ene
-                                2015</span>
-                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
-                                    class="fas fa-landmark text-[10px] mr-1"></i> Ministerio de Relaciones Exteriores ·
-                                Sede Central</span>
-                        </div>
-                        <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
-                            <h3 class="text-lg font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">IT
-                                Professional II / SysAdmin / Team Lead</h3>
-                            <p class="text-xs font-semibold text-[#7700F0] mb-3">Infraestructura Gubernamental y
-                                Misiones Diplomáticas</p>
-                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
-                                Responsable técnico senior de plataformas críticas basadas en Linux y FreeBSD,
-                                gestionando almacenamiento masivo NAS/SAN y entornos de virtualización KVM/VMware para
-                                más de <strong class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">5,000 usuarios
-                                    activos</strong>. Miembro central de la misión oficial de despliegue del sistema de
-                                pasaportes biométricos del Estado, realizando auditorías de infraestructura perimetral
-                                (IDS/IPS), servicios core (DNS, DHCP, LDAP) e integraciones de hardware *on-site* en
-                                delegaciones diplomáticas de <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">Suiza, Bélgica, Colombia,
-                                    Líbano, Egipto y Siria</strong>. Automatización de servidores core mediante
-                                programación en Perl y liderazgo inicial de equipos de soporte técnico tercerizado.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- NODO 4: Infraestructura de Estado y Despliegues Globales (2003 - 2015) -->
-                    <div class="relative pl-6 md:pl-8 group">
-                        <div
-                            class="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-[#7700F0] ring-4 ring-[#F8F6FA] dark:ring-[#0A0A0F] group-hover:scale-125 transition-transform duration-200">
-                        </div>
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-[#7700F0]">Dic 2003 - Ene
-                                2015</span>
-                            <span class="text-xs font-medium text-[#6B6B7A] dark:text-[#9A9AAB]"><i
-                                    class="fas fa-landmark text-[10px] mr-1"></i> Ministerio de Relaciones Exteriores ·
-                                Sede Central</span>
-                        </div>
-                        <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] shadow-sm group-hover:shadow-md transition-all duration-300">
-                            <h3 class="text-lg font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">IT
-                                Professional II / SysAdmin / Team Lead</h3>
-                            <p class="text-xs font-semibold text-[#7700F0] mb-3">Infraestructura Gubernamental y
-                                Misiones Diplomáticas</p>
-                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">
-                                Responsable senior de plataformas críticas e <strong>Implementador desde cero del
-                                    correo
-                                    corporativo institucional</strong>, asumiendo la migración y administración integral
-                                de la
-                                plataforma
-                                Zimbra para más de <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">5,000 usuarios
-                                    activos</strong>. Gestión de almacenamiento masivo NAS/SAN y entornos de
-                                virtualización KVM/VMware. Miembro central de la misión oficial de despliegue del
-                                sistema de pasaportes biométricos del Estado, realizando auditorías de infraestructura
-                                perimetral (IDS/IPS), servicios core (DNS, DHCP, LDAP) e integraciones de hardware
-                                *on-site* en delegaciones diplomáticas de <strong
-                                    class="text-[#1A1A2E] dark:text-[#F5F5F5] font-semibold">Suiza, Bélgica, Colombia,
-                                    Líbano, Egipto y Siria</strong>. Automatización de servidores core mediante
-                                programación en Perl y liderazgo inicial de equipos de soporte técnico tercerizado.
-                            </p>
+                            <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] leading-relaxed">Diseño y
+                                orquestación en HomeLab de arquitecturas basadas en Kubernetes (clúster k3s),
+                                micro-servicios en Podman/Docker, desarrollo web con entornos Laravel y despliegues
+                                declarativos modernos.</p>
                         </div>
                     </div>
 
                 </div>
 
-                <!-- GRID DE ENTORNO TECNOLÓGICO CENTRALIZADO (Sustituye a las antiguas Tablas 2 y 3, sin repetir datos) -->
+                <!-- GRID DE TARJETAS TÉCNICAS CON BADGES (Sustituye a las Tablas 2 y 3 fusionadas, eliminando redundancia) -->
                 <div class="space-y-8">
                     <div class="text-center">
                         <h3
                             class="text-2xl md:text-3xl font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2 transition-colors">
-                            Ecosistema y Especialidades Técnicas
+                            Ecosistema y Tecnologías Clave
                         </h3>
                         <p class="text-xs md:text-sm text-[#6B6B7A] dark:text-[#B0B0B0] transition-colors">
-                            Tecnologías consolidadas y operadas en entornos de alta disponibilidad a lo largo de mi
-                            carrera.
+                            Especialidades operativas validadas a lo largo de mi trayectoria y laboratorios de
+                            arquitectura.
                         </p>
                     </div>
 
@@ -1020,7 +975,7 @@
                             class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm transition-all duration-300">
                             <div class="text-[#7700F0] text-xl mb-4"><i class="fas fa-server"></i></div>
                             <h4 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 transition-colors">
-                                Sistemas & Computación Física</h4>
+                                Sistemas & Virtualización</h4>
                             <div class="flex flex-wrap gap-2">
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Linux
@@ -1028,99 +983,71 @@
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">FreeBSD</span>
                                 <span
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Ubuntu
+                                    / Fedora Server</span>
+                                <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Proxmox
                                     VE</span>
                                 <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Hyper-V
-                                    / VMware</span>
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Hyper-V</span>
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Nutanix</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Almacenamiento
-                                    SAN/NAS</span>
                             </div>
                         </div>
 
-                        <!-- Tarjeta 2: Redes, Seguridad & Servicios Corporativos -->
-                        <!-- <div
-                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm transition-all duration-300">
-                            <div class="text-[#7700F0] text-xl mb-4"><i class="fas fa-shield-alt"></i></div>
-                            <h4 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 transition-colors">
-                                Redes, Perímetros & Correo</h4>
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">pfSense
-                                    Firewalling</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Análisis
-                                    Forense / IDS-IPS</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Seguridad
-                                    de Red / VLANs</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Zimbra
-                                    Mail Server (600+ cuentas)</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Servicios
-                                    Core (DNS, DHCP, LDAP)</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">VoIP
-                                    Asterisk</span>
-                            </div>
-                        </div> -->
-                        <!-- Tarjeta 2: Redes, Seguridad & Servicios Corporativos -->
+                        <!-- Tarjeta 2: Redes, Seguridad & Servicios Core -->
                         <div
                             class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm transition-all duration-300">
                             <div class="text-[#7700F0] text-xl mb-4"><i class="fas fa-shield-alt"></i></div>
                             <h4 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 transition-colors">
-                                Redes, Perímetros & Correo</h4>
+                                Redes, Seguridad & Correo</h4>
                             <div class="flex flex-wrap gap-2">
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">pfSense
-                                    Firewalling</span>
+                                    (Firewalling)</span>
                                 <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Análisis
-                                    Forense / IDS-IPS</span>
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Segmentación
+                                    VLANs</span>
                                 <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Seguridad
-                                    de Red / VLANs</span>
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">VPN
+                                    Gateway / Bastiones</span>
+                                <span
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">DNS
+                                    / DHCP / IDS-IPS</span>
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Zimbra
-                                    Mail ( 5,000+ cuentas)</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Servicios
-                                    Core (DNS, DHCP, LDAP)</span>
+                                    Mail Server</span>
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">VoIP
                                     Asterisk</span>
                             </div>
                         </div>
 
-                        <!-- Tarjeta 3: Contenedores, Automatización & Flujos Declarativos -->
+                        <!-- Tarjeta 3: Contenedores, Automatización & Dev -->
                         <div
                             class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm transition-all duration-300 sm:col-span-2 lg:col-span-1">
                             <div class="text-[#7700F0] text-xl mb-4"><i class="fas fa-cubes"></i></div>
                             <h4 class="text-base font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 transition-colors">
-                                Automatización & Cloud-Native</h4>
+                                Automatización & Contenedores</h4>
                             <div class="flex flex-wrap gap-2">
                                 <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Kubernetes
-                                    (k3s validation)</span>
-                                <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Docker
-                                    / Podman Engines</span>
+                                    / Docker Compose</span>
+                                <span
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Kubernetes
+                                    (k3s cluster)</span>
+                                <span
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Podman
+                                    (Atomic Engine)</span>
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Scripting
-                                    (Bash / Python / Perl)</span>
+                                    (Bash / Python)</span>
                                 <span
                                     class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Ansible
-                                    / Terraform (Lab deployment)</span>
+                                    / Terraform (Validación)</span>
                                 <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Desarrollo
-                                    Web (Laravel / PHP)</span>
-                                <span
-                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Control
-                                    de Versiones GitHub</span>
+                                    class="text-xs font-medium px-2.5 py-1 rounded bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#4A4A5A] dark:text-[#B0B0B0] transition-colors">Laravel
+                                    / PHP / Modern Web</span>
                             </div>
                         </div>
 
@@ -1129,6 +1056,7 @@
 
             </div>
         </section>
+
 
         <!-- ABOUT SECTION -->
         <section id="about"
