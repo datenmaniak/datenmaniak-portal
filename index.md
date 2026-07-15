@@ -1,3 +1,9 @@
+# archivo modelo
+
+Utilizare este index.html como punto de partida
+
+
+```html
 <!DOCTYPE html>
 <html lang="es" class="dark">
 
@@ -433,46 +439,6 @@
 
                 <!-- Contenedor de la Cuadrícula (Grid Responsivo) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-stretch">
-
-                    <!-- TARJETA 6: Migración y Modernización (v2.0) -->
-                    <div
-                        class="group flex flex-col justify-between bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 md:p-8 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] shadow-md hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(119,0,240,0.15)] transition-all duration-300">
-                        <div>
-                            <div class="text-[#7700F0] mb-4 text-2xl">
-                                <i class="fas fa-server"></i> <!-- O podrías usar fa-microchip -->
-                            </div>
-                            <h3
-                                class="text-xl font-bold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2 transition-colors duration-300">
-                                Migración Proxmox + K3s</h3>
-                            <p class="text-xs font-semibold text-[#7700F0] uppercase tracking-wider mb-3">Proxmox VE |
-                                K3s | NFS | Roles </p>
-                            <p
-                                class="text-[#6B6B7A] dark:text-[#B0B0B0] text-sm leading-relaxed mb-4 transition-colors duration-300">
-                                Migración integral de un entorno HomeLab sobre Proxmox hacia una arquitectura Cloud
-                                Native con Kubernetes. Se optimizó la distribución de carga delegando roles a los
-                                nodos Worker para liberar al Control Plane, junto con un ajuste fino de recursos
-                                (vCPU/RAM/Disco).
-                                Implementación de almacenamiento centralizado (NFS) bajo una estrategia de 'cero pérdida
-                                de datos', asegurando alta resiliencia y persistencia de la base de datos PostgreSQL.
-                            </p>
-                        </div>
-
-                        <div class="mt-6 pt-4 border-t border-[rgba(119,0,240,0.1)] flex flex-col gap-4">
-                            <div class="flex justify-center">
-                                <span
-                                    class="inline-flex items-center gap-1.5 text-sm px-3 py-1 rounded-md bg-[#F0EDF5] dark:bg-[#0A0A0F] text-[#6B6B7A] dark:text-[#B0B0B0] font-medium border border-[rgba(119,0,240,0.15)]">
-                                    <span class="text-lg">🔄</span> Hito v2.0 · Migración Exitosa
-                                </span>
-                            </div>
-                            <a href="https://gitlab.com/datenmaniak/infra-migration" target="_blank"
-                                class="group/btn inline-flex items-center justify-center gap-2 bg-[#7700F0] hover:bg-[#6600D0] text-white font-semibold px-4 py-2.5 rounded-lg transition-colors duration-300 shadow-md text-sm w-full">
-                                <span>Ver Documentación </span>
-                                <i
-                                    class="fas fa-arrow-right text-xs transform group-hover/btn:translate-x-1 transition-transform duration-300"></i>
-                            </a>
-                        </div>
-                    </div>
-
 
                     <!-- TARJETA 1: El HomeLab -->
                     <!-- Tarjetas Corregidas: Por defecto fondo blanco (#FFFFFF), en modo oscuro pasa a tu morado profundo (#1A0B2E) -->
@@ -1535,3 +1501,6 @@
 </body>
 
 </html>
+```
+
+
