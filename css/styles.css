@@ -28,9 +28,9 @@
 
     /* NUEVAS VARIABLES PARA OVERLAY DE IMÁGENES EN MODO LIGHT */
     /* Sugerido (menos blanco) -> imagen se ve mas, blanco se atenua */
-    /* --overlay-color: #D0C0E8; */
+    --overlay-color: #D0C0E8;
     /* --overlay-color: #57525e; */
-    --overlay-color: #464050;
+    /* --overlay-color: #464050; */
     --overlay-opacity: 0.80;
 }
 

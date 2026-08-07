@@ -7,26 +7,52 @@
 
     <!-- Meta etiquetas estándar -->
     <meta name="description"
-        content="Consultoría informática y soporte de infraestructura. Soluciones eficientes y a medida para sistemas y operaciones.">
+        content="Consultoría en infraestructura. Automatización de procesos, hardening de seguridad. Migraciones y Data Recovery">
 
     <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://datenmaniak.com/">
-    <meta property="og:title" content="datenmaniak | Consultoría Informática & Soporte de Infraestructura">
+    <meta property="og:title" content="datenmaniak | Consultoría en Infraestructura IT">
     <meta property="og:description"
-        content="Soluciones a medida en administración de sistemas e infraestructura tecnológica.">
+        content="Consultoría en infraestructura. Automatización de procesos, hardening de seguridad. Migraciones y Data Recovery">
     <meta property="og:image" content="https://datenmaniak.com/assets/img/preview-portfolio.jpg">
 
     <!-- Twitter / X -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://datenmaniak.com/">
-    <meta property="twitter:title" content="datenmaniak | Consultoría Informática & Soporte de Infraestructura">
+    <meta property="twitter:title" content="datenmaniak | Consultoría en Infraestructura">
     <meta property="twitter:description"
-        content="Soluciones a medida en administración de sistemas e infraestructura tecnológica.">
+        content="Consultoría en infraestructura. Automatización de procesos, hardening de seguridad. Migraciones y Data Recovery">
     <meta property="twitter:image" content="https://datenmaniak.com/assets/img/preview-portfolio.jpg">
 
 
-    <title>datenmaniak | Infrastructure & DevOps </title>
+    <title>datenmaniak | Infrastructure IT, Automatización & Migraciones </title>
+
+    <!-- JSON-LD Structured Data (Person / Professional Profile) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Williams Patiño",
+      "url": "https://datenmaniak.com",
+      "sameAs": [
+        "https://github.com/datenmaniak",
+        "https://gitlab.com/datenmaniak",
+        "https://linkedin.com/in/ppwillians"
+      ],
+      "jobTitle": "Senior Infrastructure Engineer / DevOps Apprentice",
+      "worksFor": { "@type": "Organization", "name": "datenmaniak" },
+      "knowsAbout": ["Linux", "FreeBSD", "Kubernetes", "Ansible", "Proxmox", "pfSense", "GitOps", "Zimbra", "Terraform", "Docker", "Bash", "Python"],
+      "email": "mailto:datenmaniak@gmail.com",
+      "description": "Senior Infrastructure Engineer con 11+ años operando infraestructura crítica (5,000+ usuarios, 128 misiones diplomáticas). Transición activa a DevOps/Cloud-Native: k3s, FluxCD, Ansible, Terraform. Freelance y open to remote/hybrid roles."
+    }
+    </script>
+
+    <!-- SEO Meta Adicionales -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://datenmaniak.com/">
+    <meta name="theme-color" content="#7700F0" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0A0A0F" media="(prefers-color-scheme: dark)">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -146,12 +172,14 @@
                         class="fas fa-folder-open mr-3"></i>Portafolio</a>
                 <a href="#habilidades" class="drawer-link hover:text-daten-primary transition-colors"><i
                         class="fas fa-code mr-3"></i>Habilidades</a>
+                <a href="#impacto" class="drawer-link hover:text-daten-primary transition-colors"><i
+                        class="fas fa-chart-line mr-3"></i>Impacto Medible</a>
                 <a href="#trayectoria" class="drawer-link hover:text-daten-primary transition-colors"><i
                         class="fas fa-briefcase mr-3"></i>Trayectoria</a>
                 <a href="#about" class="drawer-link hover:text-daten-primary transition-colors"><i
                         class="fas fa-user mr-3"></i>Sobre Mí</a>
-                <a href="#testimonios" class="drawer-link hover:text-daten-primary transition-colors"><i
-                        class="fas fa-comments mr-3"></i>Testimonios</a>
+                <a href="#referencias" class="drawer-link hover:text-daten-primary transition-colors"><i
+                        class="fas fa-user-check mr-3"></i>Referencias</a>
                 <a href="#contacto" class="drawer-link hover:text-daten-primary transition-colors"><i
                         class="fas fa-envelope mr-3"></i>Contacto</a>
             </nav>
@@ -213,7 +241,7 @@
             <!-- Opacidad light mode  -->
             <!-- Opción 1: Más contraste y visibilidad de las fotos (Recomendada) -->
             <div
-                class="absolute inset-0 z-1 bg-white/45 backdrop-blur-[4px] dark:bg-black/60 dark:backdrop-blur-[3px] transition-all duration-300">
+                class="absolute inset-0 z-1 bg-white/35 backdrop-blur-[3px] dark:bg-black/60 dark:backdrop-blur-[3px] transition-all duration-300">
                 <!-- class="absolute inset-0 z-1 bg-white/25 backdrop-blur-[5px] dark:bg-black/60 dark:backdrop-blur-none transition-all duration-300"> -->
             </div>
 
@@ -235,38 +263,36 @@
                         DevOps Engineer</span>
                 </div> -->
                 <div
-                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(119,0,240,0.06)] dark:bg-[rgba(119,0,240,0.15)] border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] mb-6 animate-fade-in-down select-none">
+                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 dark:bg-[#1A0B2E]/90 border border-[#7700F0]/30 dark:border-[#7700F0]/50 mb-6 animate-fade-in-down select-none backdrop-blur-sm">
 
                     <span class="relative flex h-2 w-2">
                         <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#46F000] opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#46F000]"></span>
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F59E0B] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#F59E0B]"></span>
                     </span>
 
                     <span
-                        class="text-xs font-mono font-bold tracking-wider text-[#7700F0] dark:text-[#CFA1FF] uppercase">
-                        Linux Infra & DevOps Engineer
+                        class="text-xs font-mono font-bold tracking-wider text-[#1A1A2E] dark:text-[#F5F5F5] uppercase">
+                        Senior Infra Engineer · DevOps Apprentice · Open to Remote/Hybrid roles
                     </span>
 
                 </div>
 
                 <h1
                     class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#1A1A2E] dark:text-white tracking-tight leading-none mb-6 max-w-4xl transition-colors duration-300">
-                    ¿No esta seguro si su infraestructura está realmente protegida y todavía administras servidores
-                    físicos<br class="hidden sm:inline">
-                    <!-- <span>con despliegues manuales?</span> -->
-                    <!-- <span class="text-[#7700F0] ">y tus despliegues son manuales?</span> -->
+                    11 años operando infraestructura.<br class="hidden sm:inline">
+                    <span class="text-white dark:text-white">Ahora automatizándola con el enfoque Cloud Native.</span>
                 </h1>
 
-                <!-- <p
-                    class="text-base sm:text-lg md:text-xl text-[#4A4A5A] dark:text-gray-200 max-w-2xl font-normal leading-relaxed mb-10 transition-colors duration-300">
-                    Especialista en administración de sistemas Linux, automatización y despliegue de arquitecturas
-                    cloud. Optimizando el rendimiento y la disponibilidad de operaciones críticas.
-                </p> -->
                 <p
-                    class="text-base sm:text-lg md:text-xl text-[#1A1A2E] dark:text-gray-200 max-w-2xl font-medium leading-relaxed mb-10 transition-colors duration-300">
-                    Con mi experiencia puedo apoyar a tu equipo de IT con seguridad real, Virtualización y
-                    Automatización.
+                    class="text-white sm:text-lg md:text-xl text-text-primary dark:text-text-primary max-w-2xl font-medium leading-relaxed mb-10 transition-colors duration-300">
+                    Estoy abierto a roles donde la fiabilidad de la infraestructura sea la prioridad. Aporto mi
+                    experiencia como un valor
+                    agregado a su equipo de IT.
+                    <br class="hidden sm:inline">
+                    <!-- <a href="https://gitlab.com/datenmaniak/infra-migration" target="_blank"
+                        class="underline hover:text-[#7700F0] transition-colors font-semibold">Ver migración v2.0
+                        documentada →</a> -->
                 </p>
 
                 <a href="#portafolio"
@@ -278,6 +304,20 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </a>
+
+                <!-- CV Download Buttons (Hero) -->
+                <div class="mt-6 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                    <a href="cv/CV_Willians_Patino_Ingeniero-Infraestructura.pdf" target="_blank" download
+                        class="group inline-flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-[#7700F0] text-[#7700F0] font-semibold text-sm hover:bg-[#7700F0] hover:text-white transition-all duration-200 shadow-sm">
+                        <i class="fas fa-file-download text-base"></i>
+                        <span>CV Español</span>
+                    </a>
+                    <a href="cv/Willians_Patino_Infrastructure-Engineer.pdf" target="_blank" download
+                        class="group inline-flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-[#7700F0]/50 text-[#7700F0]/80 font-semibold text-sm hover:border-[#7700F0] hover:text-[#7700F0] hover:bg-[#7700F0]/10 transition-all duration-200">
+                        <i class="fas fa-file-download text-base"></i>
+                        <span>CV English</span>
+                    </a>
+                </div>
             </div>
 
             <div class="carousel-indicators absolute bottom-8 left-0 right-0 z-10 flex justify-center gap-3">
@@ -890,7 +930,166 @@
             </div>
         </section>
 
-        <!-- aqui  -->
+        <!-- IMPACTO MEDIBLE SECTION -->
+        <section id="impacto"
+            class="min-h-screen flex items-center justify-center bg-[#F8F6FA] dark:bg-[#0A0A0F] py-20 px-4 md:px-8 transition-colors duration-300 relative">
+
+            <!-- Luces ambientales de fondo consistentes con la marca #7700F0 -->
+            <div
+                class="absolute top-1/4 left-10 w-72 h-72 bg-[#7700F0] opacity-[0.01] dark:opacity-[0.02] rounded-full blur-3xl pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-10 w-72 h-72 bg-[#7700F0] opacity-[0.01] dark:opacity-[0.02] rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="w-full max-w-7xl mx-auto relative z-10">
+
+                <!-- Encabezado de la Sección -->
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 transition-colors duration-300">
+                        Impacto Medible
+                    </h2>
+                    <p
+                        class="text-sm md:text-base text-[#6B6B7A] dark:text-[#B0B0B0] max-w-3xl mx-auto transition-colors">
+                        Resultados cuantificables de 11 años operando infraestructura crítica en sector público,
+                        diplomático y empresarial. Métricas que importan a jefes de operaciones y reclutadores técnicos.
+                    </p>
+                </div>
+
+                <!-- GRID DE MÉTRICAS (8 KPIs Estratégicos) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+                    <!-- 1. Escala de Usuarios -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">5,000+</div>
+                        <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Usuarios Activos
+                            Gestionados</div>
+                        <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">LDAP HA · Zimbra · 128 misiones
+                            diplomáticas</div>
+                    </div>
+
+                    <!-- 2. Seguridad: Reducción SPAM -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">80% → 5%</div>
+                        <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Reducción Incidencias
+                            SPAM</div>
+                        <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">IDS/IPS en plataforma de correo crítica
+                        </div>
+                    </div>
+
+                    <!-- 3. Optimización de Costos -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">40%</div>
+                        <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Optimización Telecom
+                        </div>
+                        <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Recuperación 8+ años datos · Stack
+                            open-source $0 licencias</div>
+                    </div>
+
+                    <!-- 4. Alcance Global -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">6 Países</div>
+                        <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Despliegues On-Site
+                        </div>
+                        <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Pasaportes biométricos · Suiza, Bélgica,
+                            Colombia, Líbano, Egipto, Siria</div>
+                    </div>
+
+                    <!-- 5. Disponibilidad / Uptime (Jefe Operaciones) -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">99.9%+</div>
+                        <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Disponibilidad Objetivo
+                        </div>
+                        <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">HA en LDAP, Zimbra, DNS, DHCP · Sin SLA
+                            formal, cultura de uptime</div>
+                    </div>
+
+                    <!-- 6. Tiempo de Recuperación / MTTR (Jefe Operaciones) -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <div class="text-4xl font-black text-[#7700F0] mb-2">
+                            < 4h</div>
+                                <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">MTTR Estimado
+                                    Crítico</div>
+                                <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Backups probados · DR
+                                    documentado · Automatización Bash/Python</div>
+                        </div>
+
+                        <!-- 7. Reducción Carga Manual / Automatización (RR.HH / Tech Lead) -->
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                            <div class="text-4xl font-black text-[#7700F0] mb-2">60%+</div>
+                            <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Tareas
+                                Automatizadas</div>
+                            <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Provisioning, backups, monitoreo,
+                                reportes · Bash/Python/Ansible</div>
+                        </div>
+
+                        <!-- 8. Tiempo en Rol / Retención (RR.HH) -->
+                        <div
+                            class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] text-center transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                            <div class="text-4xl font-black text-[#7700F0] mb-2">11 años</div>
+                            <div class="text-sm font-medium text-[#1A1A2E] dark:text-[#F5F5F5] mb-1">Permanencia Clave
+                            </div>
+                            <div class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Ministerio RR.EE. 2003–2015 ·
+                                Lealtad, conocimiento institucional, evolución</div>
+                        </div>
+
+                    </div>
+
+                    <!-- RESUMEN EJECUTIVO PARA RECLUTADORES -->
+                    <div
+                        class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 md:p-8 rounded-2xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.3)] shadow-md">
+                        <h3 class="text-xl font-bold text-[#7700F0] mb-4 flex items-center gap-2">
+                            <i class="fas fa-bullseye"></i> Resumen para Evaluación Rápida
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                            <div>
+                                <h4 class="font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2">Para Jefe de
+                                    Operaciones</h4>
+                                <ul class="space-y-1 text-[#6B6B7A] dark:text-[#B0B0B0] list-disc list-inside">
+                                    <li>Gestión 5k+ usuarios, 128 sitios remotos, HA real</li>
+                                    <li>Seguridad perimetral: pfSense, IDS/IPS, VPNs, VLANs</li>
+                                    <li>DR/Backup probado · MTTR < 4h · Cultura uptime 99.9%+</li>
+                                    <li>Optimización 40% costos · Stack open-source · $0 licencias</li>
+                                    <li>Transición activa a k3s, FluxCD, Ansible, Terraform (HomeLab)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2">Para Reclutador
+                                    Técnico / RR.HH.</h4>
+                                <ul class="space-y-1 text-[#6B6B7A] dark:text-[#B0B0B0] list-disc list-inside">
+                                    <li>11 años en rol crítico (estabilidad, lealtad, evolución)</li>
+                                    <li>Experiencia internacional: 6 países, 128 misiones diplomáticas</li>
+                                    <li>Stack completo: Linux/FreeBSD → Kubernetes/GitOps/IaC</li>
+                                    <li>Certificaciones: CCNA, Juniper · CKA en prep · AWS Cloud Practitioner en prep
+                                    </li>
+                                    <li>Inglés B1 · Francés B1 · Disponibilidad Remoto/Híbrido</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-2">Diferenciadores Clave
+                                </h4>
+                                <ul class="space-y-1 text-[#6B6B7A] dark:text-[#B0B0B0] list-disc list-inside">
+                                    <li>Entiende el hardware Y el código (Dev↔Ops real)</li>
+                                    <li>HomeLab vivo como prueba de habilidades: gitlab.com/datenmaniak</li>
+                                    <li>Migración documentada v2.0: Proxmox → k3s + NFS + GitOps</li>
+                                    <li>Autodidacta riguroso: aprende haciendo, documenta, comparte</li>
+                                    <li>Mentalidad dueño: optimiza costos, asegura continuidad, elimina silos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
         <!-- TRAYECTORIA PROFESIONAL SECTION -->
         <section id="trayectoria"
             class="min-h-screen flex items-center justify-center bg-[#F8F6FA] dark:bg-[#0A0A0F] py-20 px-4 md:px-8 transition-colors duration-300 relative">
@@ -1306,6 +1505,26 @@
                             disfruta profundamente resolver problemas complejos (<span class="italic">maniak</span>). Es
                             mi declaración de principios de ingeniería.
                         </p>
+
+                        <!-- CV Download (About Section) -->
+                        <div class="mt-10 pt-8 border-t border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)]">
+                            <h3 class="text-lg font-semibold text-[#1A1A2E] dark:text-[#F5F5F5] mb-4 text-center">
+                                Descargar Currículum
+                            </h3>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <a href="cv/CV_Willians_Patino_Ingeniero-Infraestructura.pdf" target="_blank" download
+                                    class="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#7700F0] text-white font-semibold text-sm hover:bg-[#6200CC] hover:shadow-[0_5px_15px_rgba(119,0,240,0.35)] transition-all duration-200">
+                                    <i class="fas fa-file-pdf text-lg"></i>
+                                    <span>CV Español (PDF)</span>
+                                </a>
+                                <a href="cv/Willians_Patino_Infrastructure-Engineer.pdf" target="_blank" download
+                                    class="group inline-flex items-center gap-2 px-5 py-3 rounded-xl border-2 border-[#7700F0] text-[#7700F0] font-semibold text-sm hover:bg-[#7700F0] hover:text-white transition-all duration-200">
+                                    <i class="fas fa-file-pdf text-lg"></i>
+                                    <span>CV English (PDF)</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -1313,50 +1532,81 @@
             </div>
         </section>
 
-        <!-- TESTIMONIOS SECTION (Corregido con Degradado de Marca Adaptativo) -->
-        <section id="testimonios"
-            class="min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#F3EEFA] to-[#EAE2F7] dark:from-[#130626] dark:to-[#080312] py-24 px-4 md:px-8 border-y border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] transition-all duration-500 relative">
+        <!-- REFERENCIAS PROFESIONALES SECTION -->
+        <section id="referencias"
+            class="min-h-[40vh] flex items-center justify-center bg-[#F8F6FA] dark:bg-[#0A0A0F] py-20 px-4 md:px-8 transition-colors duration-300 relative">
 
-            <!-- Destello ambiental interno para suavizar el degradado oscuro -->
+            <!-- Luces ambientales de fondo consistentes con la marca #7700F0 -->
             <div
-                class="absolute inset-0 bg-radial-gradient from-[rgba(119,0,240,0.02)] to-transparent pointer-events-none">
+                class="absolute top-1/4 left-10 w-72 h-72 bg-[#7700F0] opacity-[0.01] dark:opacity-[0.02] rounded-full blur-3xl pointer-events-none">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-10 w-72 h-72 bg-[#7700F0] opacity-[0.01] dark:opacity-[0.02] rounded-full blur-3xl pointer-events-none">
             </div>
 
-            <div class="w-full max-w-4xl mx-auto relative z-10 text-center">
+            <div class="w-full max-w-3xl mx-auto relative z-10 text-center">
 
-                <!-- 1) CORRECCIÓN: Título con contraste dinámico garantizado -->
                 <h2
-                    class="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1A1A2E] dark:text-[#F5F5F5] mb-10 transition-colors duration-300">
-                    Testimonios
+                    class="text-3xl md:text-5xl font-extrabold tracking-tight text-[#1A1A2E] dark:text-[#F5F5F5] mb-6 transition-colors duration-300">
+                    Referencias Profesionales
                 </h2>
 
-                <!-- Tarjeta Central: Diseño "Glassmorphism" adaptativo -->
+                <p class="text-lg text-[#6B6B7A] dark:text-[#B0B0B0] mb-8 leading-relaxed max-w-2xl mx-auto">
+                    Cuento con referencias verificables de ex-supervisores, colegas técnicos y clientes de proyectos
+                    freelance.
+                    Por ética y confidencialidad profesional, no expongo nombres ni datos de contacto públicamente.
+                </p>
+
                 <div
-                    class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-8 md:p-12 rounded-2xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-xl max-w-2xl mx-auto transition-all duration-300 hover:shadow-[0_20px_45px_rgba(119,0,240,0.15)]">
-
-                    <!-- Icono de comillas decorativo -->
-                    <div
-                        class="text-[rgba(119,0,240,0.25)] dark:text-[rgba(119,0,240,0.35)] text-5xl font-serif mb-4 select-none">
-                        “
+                    class="bg-[#FFFFFF] dark:bg-[#1A0B2E] p-6 md:p-8 rounded-2xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-md">
+                    <div class="flex items-center justify-center gap-3 text-[#7700F0] mb-4">
+                        <i class="fas fa-shield-alt text-xl"></i>
+                        <span class="text-lg font-semibold text-[#1A1A2E] dark:text-[#F5F5F5]">Disponibles bajo
+                            solicitud</span>
                     </div>
-
-                    <!-- Texto descriptivo pulido para lectura cómoda -->
-                    <p
-                        class="text-base md:text-lg text-[#4A4A5A] dark:text-[#B0B0B0] italic leading-relaxed mb-8 transition-colors duration-300">
-                        Actualmente impulsando infraestructuras y construyendo relaciones de confianza con mis primeros
-                        clientes. Si hemos colaborado en algún proyecto o despliegue y deseas compartir tu experiencia,
-                        tu feedback será muy valioso.
+                    <ul
+                        class="text-sm text-[#6B6B7A] dark:text-[#B0B0B0] space-y-2 text-left max-w-xs mx-auto list-disc list-inside">
+                        <li>Ex-jefes directos (sector público, consultoría internacional, sector privado)</li>
+                        <li>Colaboradores técnicos y pares de equipos de infraestructura</li>
+                        <li>Clientes de consultoría freelance (PYMEs, migraciones, hardening)</li>
+                    </ul>
+                    <p class="text-xs text-[#9A9AAB] dark:text-[#7A7A8A] mt-4">
+                        Se proporcionan datos de contacto y contexto de la relación laboral/profesional
+                        únicamente en fases avanzadas de proceso de selección o propuesta comercial.
                     </p>
 
-                    <!-- Botón de Llamado a la Acción -->
-                    <div class="flex justify-center">
+                    <div class="mt-6 pt-6 border-t border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)]">
                         <a href="#contacto"
                             class="inline-flex items-center gap-2 text-sm font-semibold px-6 py-3 rounded-lg bg-[#7700F0] text-white hover:bg-[#5F00C2] shadow-md hover:shadow-[0_5px_15px_rgba(119,0,240,0.35)] transition-all duration-200 transform hover:-translate-y-0.5">
-                            <i class="fas fa-comment-alt text-xs"></i>
-                            <span>Dejar una opinión</span>
+                            <i class="fas fa-envelope text-xs"></i>
+                            <span>Solicitar referencias</span>
                         </a>
                     </div>
+                </div>
 
+                <!-- Validación técnica complementaria -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <a href="https://gitlab.com/datenmaniak" target="_blank"
+                        class="group bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <i
+                            class="fab fa-gitlab text-[#FC6D26] text-2xl mb-2 block group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-medium text-[#1A1A2E] dark:text-[#F5F5F5] block">GitLab</span>
+                        <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Proyectos documentados</span>
+                    </a>
+                    <a href="https://github.com/datenmaniak" target="_blank"
+                        class="group bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <i
+                            class="fab fa-github text-[#181717] dark:text-[#F5F5F5] text-2xl mb-2 block group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-medium text-[#1A1A2E] dark:text-[#F5F5F5] block">GitHub</span>
+                        <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Código abierto y scripts</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ppwillians" target="_blank"
+                        class="group bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] transition-all duration-300 hover:border-[#7700F0]/50 hover:shadow-[0_10px_30px_rgba(119,0,240,0.1)]">
+                        <i
+                            class="fab fa-linkedin text-[#0A66C2] text-2xl mb-2 block group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs font-medium text-[#1A1A2E] dark:text-[#F5F5F5] block">LinkedIn</span>
+                        <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0]">Red y recomendaciones</span>
+                    </a>
                 </div>
 
             </div>
@@ -1438,6 +1688,52 @@
                                         424-2486169</span>
                                 </div>
                             </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/ppwillians" target="_blank"
+                                class="group flex items-center gap-4 bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm hover:border-[#7700F0] hover:shadow-[0_5px_15px_rgba(119,0,240,0.08)] transition-all duration-300">
+                                <div
+                                    class="text-[#0A66C2] text-xl transform group-hover:scale-110 transition-transform duration-200">
+                                    <i class="fab fa-linkedin w-6 text-center"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0] transition-colors">Red
+                                        Profesional</span>
+                                    <span
+                                        class="text-sm font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">ppwillians</span>
+                                </div>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/datenmaniak" target="_blank"
+                                class="group flex items-center gap-4 bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm hover:border-[#7700F0] hover:shadow-[0_5px_15px_rgba(119,0,240,0.08)] transition-all duration-300">
+                                <div
+                                    class="text-[#181717] dark:text-[#F5F5F5] text-xl transform group-hover:scale-110 transition-transform duration-200">
+                                    <i class="fab fa-github w-6 text-center"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0] transition-colors">Código y
+                                        Repositorios</span>
+                                    <span
+                                        class="text-sm font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">datenmaniak</span>
+                                </div>
+                            </a>
+
+                            <!-- GitLab -->
+                            <a href="https://gitlab.com/datenmaniak" target="_blank"
+                                class="group flex items-center gap-4 bg-[#FFFFFF] dark:bg-[#1A0B2E] p-4 rounded-xl border border-[rgba(119,0,240,0.15)] dark:border-[rgba(119,0,240,0.25)] shadow-sm hover:border-[#7700F0] hover:shadow-[0_5px_15px_rgba(119,0,240,0.08)] transition-all duration-300">
+                                <div
+                                    class="text-[#FC6D26] text-xl transform group-hover:scale-110 transition-transform duration-200">
+                                    <i class="fab fa-gitlab w-6 text-center"></i>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-xs text-[#6B6B7A] dark:text-[#B0B0B0] transition-colors">Proyectos
+                                        y
+                                        Documentación</span>
+                                    <span
+                                        class="text-sm font-bold text-[#1A1A2E] dark:text-[#F5F5F5] transition-colors">datenmaniak</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1508,25 +1804,30 @@
 
     <!-- FOOTER REORGANIZADO -->
     <footer
-        class="bg-[#FFFFFF] dark:bg-[#0A0A0F] text-[#6B6B7A] dark:text-[#B0B0B0] py-6 px-4 md:px-8 border-t border-[rgba(119,0,240,0.1)] dark:border-[rgba(119,0,240,0.2)] text-sm transition-colors duration-300">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        class="bg-[#1A0B2E] text-[#B0B0B0] py-8 px-4 md:px-8 border-t border-[#7700F0]/20 text-sm transition-colors duration-300">
+        <div class="max-w-6xl mx-auto flex flex-col items-center justify-center gap-6 text-center">
 
-            <!-- Lado Izquierdo: Copyright -->
-            <p class="text-center sm:text-left text-xs md:text-sm">
+            <!-- Copyright -->
+            <p class="text-xs md:text-sm">
                 &copy; 2026 datenmaniak · Todos los derechos reservados
             </p>
 
-            <!-- Lado Derecho: Accesos Profesionales Compactos (GitHub y LinkedIn) -->
-            <div class="flex items-center gap-5">
+            <!-- Accesos Profesionales -->
+            <div class="flex items-center gap-6">
                 <a href="https://github.com/datenmaniak" target="_blank"
-                    class="text-[#6B6B7A] dark:text-[#B0B0B0] hover:text-[#7700F0] text-lg transition-colors duration-200"
-                    title="GitHub Profesional">
+                    class="text-[#B0B0B0] hover:text-[#7700F0] text-xl transition-colors duration-200"
+                    title="GitHub Profesional" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://linkedin.com/in/ppwillians" target="_blank"
-                    class="text-[#6B6B7A] dark:text-[#B0B0B0] hover:text-[#7700F0] text-lg transition-colors duration-200"
-                    title="LinkedIn Profesional">
+                    class="text-[#B0B0B0] hover:text-[#7700F0] text-xl transition-colors duration-200"
+                    title="LinkedIn Profesional" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://gitlab.com/datenmaniak" target="_blank"
+                    class="text-[#B0B0B0] hover:text-[#FC6D26] text-xl transition-colors duration-200"
+                    title="GitLab Profesional" aria-label="GitLab">
+                    <i class="fab fa-gitlab"></i>
                 </a>
             </div>
 
