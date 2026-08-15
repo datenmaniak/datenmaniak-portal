@@ -23,8 +23,3 @@ El contenido y la propuesta de valor del sitio web están alineados con mi reali
 * **JavaScript (Vanilla)** (Lógica del carrusel de fondo y conmutador de tema local)
 * **FontAwesome** (Iconografía técnica)
 
----
-
-## 📄 Licencia
-
-Este proyecto es de código abierto y uso personal bajo la marca **datenmaniak**.
